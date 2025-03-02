@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: white;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.bar .img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-left: 1%;
+}
+.bar h1 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 5px;
+}
+
+main{
+    display: flex; /* ใช้ flexbox กับ body */
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    justify-content: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+    min-height: 90vh; /* ให้ body สูงเท่ากับหน้าจอ */
+}
+
+.container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* width: 450px; */
+    min-width: 450px;
+    max-width: 500px;
+    min-height: 450px;
+    max-height: 500;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 0 25px rgba(0, 0, 0, .2);
+    
+
+    .h2{
+        padding: 25px 35px 0px;
+        font-weight: 800;
+    }
+
+    .content{
+        margin: 10px;
+        .word{
+            padding: 45px 60px 10px 60px;
+            font-size: 40px;
+            font-weight: 800;
+            text-align: center;
+            letter-spacing: 24px;
+            margin-right: -20px;
+            text-transform: uppercase;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            white-space: normal; /* ป้องกันไม่ให้ข้อความอยู่ในบรรทัดเดียว */
+        }
+        .details{
+            margin-top: 40px;
+            font-weight: 800;
+            padding: 0 40px 0 40px;
+            
+
+            .hint{
+                font-size: 16px;
+                font-weight: 800;
+            }
+
+            .time{
+                color: #8276F5;
+                padding: 8px 0px 10px;
+                font-size: 14px;
+            }
+        }
+
+        .input {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            border-radius: 50px;
+            width: 80%; /* ทำให้ input กว้างเต็ม container */
+            border: 0;
+            background-color: #D9D9D9;
+            padding: 0 15px; /* เพิ่ม padding ด้านข้าง */
+            box-sizing: border-box; /* ป้องกัน padding ทำให้ขนาดเกิน */
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between; /* กระจายปุ่มให้อยู่ซ้าย-ขวา */
+            width: 80%; /* ให้ .buttons กว้างเต็ม container */
+            padding: 12px 15px;
+            height: 75px;
+
+            .refresh-word {
+                background-color: #404040;
+                color: #fff;
+            }
+
+            .check-word{
+                background-color: #8276F5;
+                color: #fff;
+            }
+        }
+        
+        .buttons button {
+            width: 130px; /* กำหนดขนาดปุ่มคงที่ */
+            border-radius: 50px;
+            border: none;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+}
+
+.audio{
+    margin: -30px 0 0 30px;
+}

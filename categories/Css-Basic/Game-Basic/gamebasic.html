@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Main</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="/categories/Css-Basic/Game-Basic/gamebasic.css" rel="stylesheet">
+        <script src="/categories/Css-Basic/Game-Basic/wordcssbasic.js" defer></script>
+        <script src="/categories/Css-Basic/Game-Basic/randomcssbasic.js" defer></script>
+        <script src="/categories/Css-Basic/Game-Basic/enterbuttoncssbasic.js"></script>
+    <body>
+        <header>
+            <div class="bar">
+                <img class="img" src="/img/reColor.png" alt="Logo">
+                <h1>Scramble Quest</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <h2 class="h2">Word Scramble</h2>
+                <div class="content">
+                    <p class="word"></p>
+                    <center>
+                        <div class="details">
+                            <p class="hint">Hint : <span></span></p>
+                            <p class="time">Time left : <span><b>30</b>s</span></p>
+                        </div>
+                    </center>
+                    
+                    <center><input type="text"  class="input"></center>
+                    <center>
+                        <div class="buttons">
+                        <button class="refresh-word">Refresh</button>
+                        <button class="check-word">Check</button>
+                    </center>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="background-video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="/img/Background Pattern HTML 4k.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <audio class="audio" controls autoplay loop>
+            <source src="/img/what the bunny doin.wav" type="audio/wav">
+        </audio>
+    </body>
+</html>
