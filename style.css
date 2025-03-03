@@ -141,7 +141,7 @@
             justify-content: center;
             .head-text1{
                 h3{
-                    font-size: 42px;
+                    font-size: 32px;
                     font-weight: 800;
                     color: black;
                     margin: 0 0 0 0;
@@ -150,7 +150,7 @@
             .head-text2{
                 margin-top: -0.7%;
                 h1{
-                    font-size: 54px;
+                    font-size: 48px;
                     font-weight: 800;
                     color: #8865FF;
                 }
@@ -160,7 +160,7 @@
 }
 .box-video{
     background-color: rgb(176, 176, 176);
-    width: 900px;
+    width: 770px;
     height: 500px;
     border-radius: 2rem;
     iframe{
