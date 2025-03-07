@@ -5,24 +5,58 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/categories/Eng-Advanced/Game-Advanced/gadv.css" rel="stylesheet">
+        
+    </head>
         <script src="/categories/Eng-Advanced/Game-Advanced/wordgadv.js" defer></script>
         <script src="/categories/Eng-Advanced/Game-Advanced/randomgadv.js" defer></script>
-    </head>
+        <script src="/categories/Eng-Advanced/Game-Advanced/enterbuttonadv.js"></script>
+        <script src="/categories/Eng-Advanced/Game-Advanced/musicadv.js"></script>
     <body>
-        <div class="container">
-            <h2>Word Scramble</h2>
-            <div class="content">
-                <p class="word"></p>
-                <div class="details">
-                    <p class="hint">Hint: <span></span></p>
-                    <p class="time">Time left: <span><b>30</b>s</span></p>
-                </div>
-                <input type="text" placeholder="Enter a valid word">
-                <div class="buttons">
-                    <button class="refresh-word">Refresh Word</button>
-                    <button class="check-word">Check Word</button>
+        <header>
+            <div class="bar">
+                <img class="img" src="/img/reColor.png" alt="Logo">
+                <h1>Scramble Quest</h1>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <h2>Word Scramble</h2>
+                <div class="content">
+                    <p id="lives">❤️ ❤️ ❤️</p> <!-- แสดงหัวใจ -->
+                    <p id="streak">🔥 Streak: 0</p>
+                    <p class="word" id="scrambled-word">???</p>
+                    <center>
+                        <div class="details">
+                            <p class="hint">Hint : <span></span></p>
+                            <p class="time">Time left : <span><b>30</b>s</span></p>
+                        </div>
+                    </center>
+                    
+                    <center><input type="text" id="user-input" placeholder="Enter a valid word"></center>
+                    <center>
+                        <div class="buttons">
+                        <button class="refresh-word">Refresh</button>
+                        <button class="check-word">Check</button>
+                    </center>
+                    </div>
                 </div>
             </div>
+        </main>
+
+        <div class="background-video-container">
+            <video autoplay muted loop id="background-video">
+                <source src="/img/Background Pattern 1080p 30s.mp4" type="video/mp4">
+            </video>
         </div>
+
+            <div class="music">
+                <img src="/img/pause.png" id="icon">
+                <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.6">
+            </div>
+
+            <audio id="mySong" autoplay loop>
+                <source src="/img/what the bunny doin.wav" type="audio/wav">
+            </audio>
     </body>
 </html>

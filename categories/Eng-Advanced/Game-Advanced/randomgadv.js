@@ -1,48 +1,121 @@
-const wordText = document.querySelector(".word"),
-hintText = document.querySelector(".hint span"),
-timeText = document.querySelector(".time b"),
-inputField = document.querySelector("input"),
-refreshBtn = document.querySelector(".refresh-word"),
-checkBtn = document.querySelector(".check-word");
+let availableWords = [...words]; 
+let currentWord = {};
+let streak = 0;
+let timeLeft = 30;
+let timer;
+let lives = 3;
 
-let correctWord, timer;
+let wordText, hintText, inputField, streakText, timeText, livesText;
 
-const initTimer = maxTime => {
-    clearInterval(timer);
-    timer = setInterval(() => {
-        if(maxTime > 0) {
-            maxTime--;
-            return timeText.innerText = maxTime;
-        }
-        clearInterval(timer);
-        alert(`ช้าไปละไอโง่ ${correctWord.toUpperCase()} ไง มึงไปเริ่มที่คำใหม่เลย`)
-        initGame(); //calling initGame function, so the game restart
-    }, 1000);
-}
+window.onload = () => {
+    wordText = document.getElementById("scrambled-word");
+    hintText = document.querySelector(".hint span");
+    inputField = document.getElementById("user-input");
+    streakText = document.getElementById("streak");
+    timeText = document.querySelector(".time span b");
+    livesText = document.getElementById("lives");
+
+    document.querySelector(".refresh-word").addEventListener("click", initGame);
+    document.querySelector(".check-word").addEventListener("click", checkWord);
+
+    console.log("Available words:", availableWords);
+    initGame();
+};
 
 const initGame = () => {
-    initTimer(30);
-    let randomObj = words[Math.floor(Math.random() * words.length)]; //getting random object from words
-    let wordArray = randomObj.word.split(""); //splitting each letter of random word
-    for (let i = wordArray.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1)); //getting random number
-        //shuffling and swiping word Array letters randomly
-        [wordArray[i], wordArray[j]] = [wordArray[j], wordArray[i]];
+    if (availableWords.length === 0) {
+        availableWords = [...words];
     }
-    wordText.innerText = wordArray.join("");//passing suffeled word as wordText
-    hintText.innerText = randomObj.hint; //passing random object hint as hint text
-    correctWord = randomObj.word.toLowerCase(); //passing random word to correctWord
+
+    clearInterval(timer);
+    timeLeft = 30;
+    updateTimerDisplay();
+    updateLivesDisplay();
+    startTimer();
+
+    let randomIndex = Math.floor(Math.random() * availableWords.length);
+    currentWord = availableWords[randomIndex] || {};
+
+    if (!currentWord.word) {
+        console.error("Error: Word data is missing!");
+        initGame();
+        return;
+    }
+
+    availableWords.splice(randomIndex, 1);
+    
+    console.log("Selected word:", currentWord);
+    wordText.innerText = scrambleWord(currentWord.word) || "Error!";
+    hintText.innerText = currentWord.hint || "No hint available";
     inputField.value = "";
-    inputField.setAttribute("maxlength", correctWord.length);
-    // console.log(randomObj);
-}
-initGame();
+    inputField.style.background = "white";
+};
+
+const startTimer = () => {
+    timer = setInterval(() => {
+        timeLeft--;
+        updateTimerDisplay();
+
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+            reduceLife();
+        }
+    }, 1000);
+};
+
+const updateTimerDisplay = () => {
+    timeText.innerText = timeLeft;
+};
+
+const updateLivesDisplay = () => {
+    livesText.innerText = "❤️ ".repeat(lives);
+};
+
+const reduceLife = () => {
+    lives--;
+    updateLivesDisplay();
+
+    if (lives <= 0) {
+        alert("💀 Game Over! คุณหมดหัวใจแล้ว!");
+        resetGame();
+    } else {
+        alert(`❌ คุณเสียหัวใจ! เหลือ ❤️ ${lives} ดวง`);
+        initGame();
+    }
+};
 
 const checkWord = () => {
-    let userWord = inputField.value.toLocaleLowerCase();
-    if(userWord !== correctWord) return alert(`ไอโง่มึงเขียนผิด! ไปเขียนให้ถูก`);
-    alert(`เก่งมากไอควาย! ${userWord.toUpperCase()} ไปกันต่อ`);
+    let userWord = inputField.value.trim().toLowerCase();
+    if (userWord !== currentWord.word.toLowerCase()) {
+        inputField.style.background = "red";
+        setTimeout(() => { inputField.style.background = "white"; }, 1000);
+        streak = 0;
+        streakText.innerText = `🔥 Streak: ${streak}`;
+        reduceLife();
+        return;
+    }
+
+    inputField.style.background = "green";
+    setTimeout(() => { inputField.style.background = "white"; }, 1000);
+    streak++;
+    streakText.innerText = `🔥 Streak: ${streak}`;
+    alert(`ถูกต้อง! 🎉 Streak: ${streak}`);
+
     initGame();
-}   
-refreshBtn.addEventListener("click", initGame);
-checkBtn.addEventListener("click", checkWord);
+};
+
+const scrambleWord = (word) => {
+    return word.split("").sort(() => Math.random() - 0.5).join("");
+};
+
+const resetGame = () => {
+    streak = 0;
+    lives = 3;
+    availableWords = [...words];
+    initGame();
+};
+
+window.addEventListener("beforeunload", function () {
+    streak = 0;
+    lives = 3;
+});
