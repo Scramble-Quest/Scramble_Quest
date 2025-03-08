@@ -119,10 +119,10 @@
 }
 .button{
     width: 114px;
-    height: 35px;
+    height: 40px;
     background-color: #8276F5;
     color: #FFF;
-    border-radius: 15px;
+    border-radius: 50px;
     border: none;
     font-size: 20px;
 }
