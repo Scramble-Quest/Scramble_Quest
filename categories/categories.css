@@ -35,7 +35,6 @@
     }
     .B-name2{
         font-size: 90px;
-        font-family: 'Poppins', sans-serif;
     }
 }
 .search {
@@ -68,7 +67,6 @@
 }
 .C-name{
     font-size: 25px;
-    font-family: 'Poppins', sans-serif;
 }
 .Bgame{
     flex-wrap: wrap;
@@ -112,7 +110,6 @@
 .text{
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Poppins', sans-serif;
 }
 .BT{
     display: flex;
@@ -121,7 +118,6 @@
     margin-right: 10%;
 }
 .button{
-
     width: 114px;
     height: 35px;
     background-color: #8276F5;
