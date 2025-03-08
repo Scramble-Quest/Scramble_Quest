@@ -9,7 +9,7 @@
 body{
     background: url("../img/bg.png") no-repeat center center fixed;
     object-fit: cover;
-
+    background-size: cover;
 }
 .bar{
     width: 100%;
