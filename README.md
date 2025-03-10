@@ -7,3 +7,4 @@ minimum font-size = 14 px
 
 ✅index เสร็จแล้ว
 ✅how to use เสร็จแล้ว
+✅contact-us เสร็จแล้ว
