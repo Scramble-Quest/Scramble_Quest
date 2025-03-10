@@ -4,3 +4,6 @@ font : @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0
 large font-size = 18 px
 normal font-size = 16 px
 minimum font-size = 14 px
+
+✅index เสร็จแล้ว
+✅how to use เสร็จแล้ว
