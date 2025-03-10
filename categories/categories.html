@@ -5,44 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categories</title>
     <link rel="stylesheet" href="categories.css">
+    <link rel="shortcut icon" href="/img/reColor.png" type="image/x-icon">
     <script src="categories.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
 <body>
+
+    <input type="checkbox" id="menu-toggle" />
+    <div class="slide-menu">
+        <ul>
+            <li><a href="/how-to-use/howtouse.html">วิธีการใช้งาน</a></li>
+            <li><a href="/categories/categories.html">คอร์ส</a></li>
+            <li><a href="#">เกมส์ทั้งหมด</a></li>
+            <li><a href="/contact-us/contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </div>
+
+    <label for="menu-toggle" class="menu-toggle">
+        <div class="toggle-lines top-line"></div>
+        <div class="toggle-lines middle-line"></div>
+        <div class="toggle-lines bottom-line"></div>
+    </label>
+
+    <div class="overlay"></div>
+
     <div class="bar">
-        <img class="img" src="/img/reColor.png" alt="logo">
-        <h1>Scramble Quest</h1>
-        <div>
-            <input type="checkbox" id="menu-toggle" />
-            <div class="slide-menu">
-                <ul>
-                    <li><a href="/how-to-use/howtouse.html">วิธีการใช้งาน</a></li>
-                    <li><a href="/categories/categories.html">คอร์ส</a></li>
-                    <li><a href="#">เกมส์ทั้งหมด</a></li>
-                    <li><a href="/contact-us/contact.html">ติดต่อเรา</a></li>
-                 </ul>
-            </div>
-            <label for="menu-toggle" class="menu-toggle">
-                <div class="toggle-lines top-line"></div>
-                <div class="toggle-lines middle-line"></div>
-                <div class="toggle-lines bottom-line"></div>
-            </label>
-            <div class="overlay"></div>
+        <div class="logo">
+            <a href="index.html">
+            <img class="img" src="/img/reColor.png" alt="Logo" />
+            </a>
+            <a class="h-1" href="index.html">
+            <h1>Scramble Quest</h1>
+            </a>
         </div>
     </div>
+
     <div class="box">
-        <div class="box1">
-            <p class="B-name1">ประสบการณ์การเรียนรู้</p>
-            <p class="B-name2">สุดเท่ห์ Very Good!!</p>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="/img/slide1.jpg" alt="Slide 1">
+                <div class="slide-content">
+                    <p class="B-name1">ประสบการณ์การเรียนรู้</p>
+                    <p class="B-name2">สุดเท่ห์ Very Good!!</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="/img/slide2.jpg" alt="Slide 2">
+                <div class="slide-content">
+                    <p class="B-name1">Learn with Fun</p>
+                    <p class="B-name2">Play & Learn</p>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="/img/slide3.jpg" alt="Slide 3">
+                <div class="slide-content">
+                    <p class="B-name1">Master Your Skills</p>
+                    <p class="B-name2">Level Up!</p>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
     </div>
-    <div class="search">
-        <div class="C-name">Course</div>
-        <div class="searchbar-wrapper">
-            <input class="searchbar" type="text" id="searchBar" placeholder="Search..." name="searchBar">
-            <i class="fas fa-search"></i>
+
+    <div class="search-section">
+        <div class="search-header">
+            <div class="title-wrapper">
+                <h2 class="section-title">ตะลุยคอร์ส!</h2>
+                <p class="section-subtitle">"ค้นหาคอร์สที่ใช่ ปลุกไฟการเรียนรู้ในตัวคุณ!" 🔥</p>
+            </div>
+            <div class="search-filters">
+                <div class="searchbar-wrapper">
+                    <i class="fas fa-search"></i>
+                    <input class="searchbar" type="text" id="searchBar" placeholder="What do you want to learn?" name="searchBar">
+                </div>
+                <div class="filter-pills">
+                    <button class="filter-pill active" data-filter="all">
+                        <i class="fas fa-th-large"></i>All
+                    </button>
+                    <button class="filter-pill" data-filter="english">
+                        <i class="fas fa-language"></i>English
+                    </button>
+                    <button class="filter-pill" data-filter="html">
+                        <i class="fab fa-html5"></i>HTML
+                    </button>
+                    <button class="filter-pill" data-filter="css">
+                        <i class="fab fa-css3-alt"></i>CSS
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
+
     <div class="Bgame">
         <div class="all">
             <div class="game1">

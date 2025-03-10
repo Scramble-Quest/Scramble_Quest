@@ -401,3 +401,6 @@
         scale: 1.4;
     }
 }
+.scroll-down{
+    display: none;
+}
