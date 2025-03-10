@@ -5,4 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.addEventListener('click', function() {
         menuToggle.checked = false;
     });
+
+    const scrollDown = document.querySelector('.arrow-down');
+    
+    scrollDown.addEventListener('click', function() {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        });
+    });
 });
