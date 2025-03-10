@@ -22,7 +22,7 @@ body{
         display: flex;
         width: 58px;
         height: 58px;
-        margin-left: 280px;   
+        margin-left: 220px;   
     }
 }
 .box{
@@ -42,33 +42,39 @@ body{
         font-size: 90px;
     }
 }
-.search {
+.search{
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: none;
+    width: 100%;
     margin: 25px 0 25px 0;
-    gap: 46%;
+    gap: 48%;
 }
-.searchbar-wrapper {
+.searchbar-wrapper{
     position: relative;
 }
 .searchbar{
     width: 200px;
     height: 43px;
-    background-color: #eee;
+    background-color: #f0f0f0;
     border-radius: 23px;
     border: none;
-    padding-right: 50px;
-    text-align: end;
+    padding: 0 20px 0 40px;
+    font-size: 16px;
 }
-.searchbar::placeholder {
-    padding-left: 16px;
+.searchbar:focus{
+    outline: none;
 }
-.searchbar-wrapper i {
+.searchbar::placeholder{
+    color: #999;
+}
+.searchbar-wrapper i{
     position: absolute;
-    left: 215px;
+    left: 15px;
     top: 50%;
     transform: translateY(-50%);
+    color: #6b6969;
 }
 .C-name{
     font-size: 25px;
@@ -248,4 +254,191 @@ p{
 
 #menu-toggle:checked ~ .overlay {
     display: block;
+}
+/* Mobile Devices (320px - 480px) */
+@media only screen and (max-width: 480px) {
+    .bar {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        .img {
+            margin-left: 0;
+        }
+    }
+    .box1 {
+        width: 100%;
+        height: auto;
+        .B-name1{
+            font-size: 25px;
+        }
+        .B-name2{
+            font-size: 45px;
+        }
+    }
+    .search {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .all {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 11%;
+    }
+    
+    .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+
+/* iPad Mini and Smaller Tablets (481px - 767px) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .bar {
+        height: 100px;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: 400px;
+        .B-name1{
+            font-size: 30px;
+        }
+        .B-name2{
+            font-size: 55px;
+        }
+    }
+
+    .search {
+        gap: 30%;
+    }
+
+    .all {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+/* Notebook/Laptop (768px - 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .bar {
+        height: 110px;
+        .img {
+            margin-left: 150px;
+        }
+    }
+
+    .box1 {
+        width: 150%;
+        height: 450px;
+        .B-name1, .B-name2{
+            margin-top: 60px;
+        }
+    }
+    .search {
+        gap: 40%;
+    }
+
+    .all {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+/* iPad Pro and Larger Tablets (1025px - 1279px) */
+@media only screen and (min-width: 1025px) and (max-width: 1279px) {
+    .bar {
+        height: 120px;
+        .img {
+            margin-left: 200px;
+        }
+    }
+
+    .box1 {
+        width: 180%;
+        height: 480px;
+    }
+
+    .search {
+        gap: 35%;
+    }
+
+    .all {
+        width: 85%;
+        justify-content: center;
+    }
+
+    .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
+        width: 30%;
+        margin: 12px;
+    }
+}
+
+/* MacBook Air and Similar (1280px - 1440px) */
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+    .bar {
+        height: 120px;
+        .img {
+            margin-left: 180px;
+        }
+    }
+
+    .box1 {
+        width: 180%;
+        height: 500px;
+    }
+
+    .search {
+        gap: 40%;
+    }
+
+    .all {
+        width: 85%;
+        justify-content: center;
+    }
+
+    .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
+        width: 30%;
+        margin: 15px;
+    }
+}
+
+/* iPad Air (820px - 1180px) */
+@media only screen and (min-width: 820px) and (max-width: 1180px) {
+    .bar {
+        height: 110px;
+        .img {
+            margin-left: 170px;
+        }
+    }
+
+    .box1 {
+        width: 160%;
+        height: 460px;
+    }
+
+    .search {
+        gap: 30%;
+    }
+
+    .all {
+        width: 85%;
+        justify-content: center;
+    }
+
+    .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
+        width: 33%;
+        margin: 14px;
+    }
 }
