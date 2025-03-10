@@ -37,7 +37,7 @@
     .search-section {
         width: 100%;
         max-width: 425px;
-        max-width: 468px;
+        max-width: 768px;
     }
 
     .B-name1,
@@ -86,12 +86,95 @@
     
 }
 
+@media screen and (min-width: 481px) and (max-width: 485px) {
+    .box,
+    .slide-content,
+    .search-section {
+        width: 100%;
+        min-width: 481px;
+        max-width: 485px;
+    }
+
+    .menu-toggle {
+        right: 2rem;
+        top: 0.8rem;  /* Keep consistent alignment on mobile */
+    }
+
+    .bar .logo {
+        margin-left: 30px;
+        h1 {
+            font-size: 18px;
+        }
+    }
+
+    .filter-pill {
+        padding: 0.8rem 1rem;
+        border: 2px solid #8276F5;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #8276F5;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3scubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .search-section {
+        width: 100%;
+        max-width: 485px;
+        height: 320px;
+        padding: 0;
+    }
+
+    .searchbar-wrapper {
+        width: 90%;
+    }
+
+    .searchbar {
+        width: 280px;
+    }
+
+    .B-name1,
+    .B-name2,
+    .filter-pills {
+        transform: scale(0.9);
+    }
+
+    .search {
+        gap: 15px;
+        align-items: center;
+    }
+
+    .all {
+        gap: 10px;
+        margin: 0 4%;
+        padding: 10px;
+    }
+
+    .all .game1, .all .game2, .all .game3, .all .htmlgame1, .all .htmlgame2, .all .htmlgame3, .all .cssgame1, .all .cssgame2, .all .cssgame3 {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    .all .pic {
+        width: 100%;
+        height: auto;
+    }
+}
+
 /* Tablet Devices (481px - 767px) */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .box,
     .slide-content,
     .search-section {
         width: 100%;
+        min-width: 481px;
         max-width: 768px;
     }
 
@@ -148,9 +231,7 @@
     }
 
     .all {
-        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
-        margin: 0 4%;
         padding: 10px;
     }
 
@@ -253,7 +334,6 @@
     .all {
         grid-template-columns: repeat(3, minmax(220px, 1fr));
         gap: 1.5625rem;
-        width: clamp(600px, 90%, 1024px);
         margin: 0 auto;
         padding: 1rem;
     }
@@ -262,18 +342,16 @@
     .all .htmlgame1, .all .htmlgame2, .all .htmlgame3,
     .all .cssgame1, .all .cssgame2, .all .cssgame3 {
         width: 100%;
-        max-width: none;
+        max-width: 300px;
         aspect-ratio: 3/4;
         margin: 0;
-        padding: 1rem;
+        
         transition: transform 0.3s ease;
     }
 
     .all .pic {
         width: 100%;
         height: auto;
-        aspect-ratio: 16/9;
-        object-fit: cover;
     }
 
     .filter-pills {
@@ -283,4 +361,12 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+    .BT{
+        display: flex;
+        margin-right: 0;
+        justify-content: center;
+        button{
+        }
+    }
+    
 }
