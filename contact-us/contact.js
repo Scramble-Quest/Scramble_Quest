@@ -14,8 +14,17 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
     // Clear form
     this.reset();
     
-    // Show success message (you can customize this)
-    alert('Thank you for your message! We will get back to you soon.');
+    // Show beautiful success message with SweetAlert2
+    Swal.fire({
+        title: 'ส่งข้อความสำเร็จ!',
+        text: 'ขอบคุณสำหรับข้อความ เราจะรีบติดต่อคุณให้เร็วที่สุด',
+        icon: 'success',
+        iconColor: '#8764fb',
+        confirmButtonText: 'ตกลง',
+        confirmButtonColor: '#8764fb',
+        timer: 5000,
+        timerProgressBar: false
+    });
 });
 
 // Add animation for form inputs
@@ -30,3 +39,9 @@ document.querySelectorAll('.form-group input, .form-group textarea').forEach(ele
         }
     });
 });
+const loader = document.querySelector(".loader");
+const preloader = document.querySelector("#preloader");
+window.addEventListener("load", function(){
+    preloader.style.display = "none"
+    loader.style.display = "none"
+})
