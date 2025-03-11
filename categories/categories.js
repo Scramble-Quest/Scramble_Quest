@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         shouldDisplay = item.classList.toString().includes("cssgame");
                         break;
                     case "beginner":
-                        shouldDisplay = category.includes("beginner");
+                        shouldDisplay = category.includes("ระดับผู้เริ่มต้น");
                         break;
                     case "intermediate":
-                        shouldDisplay = category.includes("intermediate");
+                        shouldDisplay = category.includes("ระดับกลาง");
                         break;
                     case "advanced":
-                        shouldDisplay = category.includes("advanced");
+                        shouldDisplay = category.includes("ระดับสูง");
                         break;
                     default:
                         shouldDisplay = text.includes(searchText) || category.includes(searchText);
