@@ -509,7 +509,6 @@
         max-width: 300px;
         aspect-ratio: 3/4;
         margin: 0;
-        
         transition: transform 0.3s ease;
     }
 
@@ -531,4 +530,83 @@
         justify-content: center;
     }
     
+}
+
+/* iPhone 11 specific styles */
+@media screen and (min-width: 414px) and (max-width: 414px) {
+    .box,
+    .slide-content,
+    .search-section {
+        width: 100%;
+        max-width: 414px;
+    }
+
+    .bar .logo {
+        margin-left: 15px;
+        h1 {
+            font-size: 16px;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .menu-toggle {
+        right: 1.8rem;
+    }
+
+    .search-section {
+        width: 90%;
+        height: 300px;
+        padding: 1rem;
+    }
+
+    .searchbar-wrapper {
+        width: 90%;
+    }
+
+    .searchbar {
+        width: 250px;
+        height: 45px;
+        font-size: 0.95rem;
+    }
+
+    .filter-pills {
+        transform: none;
+        display: flex;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .filter-pill {
+        padding: 0.4rem 0.2rem;
+        font-size: 0.9rem;
+    }
+
+    .all {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .all .game1, .all .game2, .all .game3,
+    .all .htmlgame1, .all .htmlgame2, .all .htmlgame3,
+    .all .cssgame1, .all .cssgame2, .all .cssgame3 {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+        .pic {
+            width: 100%;
+            height: 220px;
+        }
+
+    .BT {
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
 }
