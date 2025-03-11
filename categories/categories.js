@@ -132,3 +132,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+const loader = document.querySelector(".loader");
+const preloader = document.querySelector("#preloader");
+window.addEventListener("load", function(){
+    preloader.style.display = "none"
+    loader.style.display = "none"
+})
