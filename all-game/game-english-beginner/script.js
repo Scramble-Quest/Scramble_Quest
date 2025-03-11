@@ -1,30 +1,38 @@
-const vocabList = [
-    { word: "apple", meaning: "A kind of fruit"},
-    { word: "banana", meaning: "A long yellow fruit"},
-    { word: "bread", meaning: "Food made from flour"},
-    { word: "milk", meaning: "A white liquid from cows"},
-    { word: "table", meaning: "A flat surface to put things on"},
-    { word: "chair", meaning: "A piece of furniture to sit on"},
-    { word: "bed", meaning: "A place where you sleep"},
-    { word: "father", meaning: "A male parent" },
-    { word: "mother", meaning: "A female parent" },
-    { word: "run", meaning: "Moving fast on foot" },
-    { word: "eat", meaning: "What you do with food" },
-    { word: "drink", meaning: "To take liquid into the mouth" },
-    { word: "sleep", meaning: "To rest with your eyes closed" },
-    { word: "play", meaning: "What children love to do" },
-    { word: "book", meaning: "Something you read" },
-    { word: "pen", meaning: "A writing instrument" },
-    { word: "teacher", meaning: "A person who teaches" },
-    { word: "pocket", meaning: "A small bag in clothes" },
-    { word: "classroom", meaning: "A place where students learn" },
-    { word: "expert", meaning: "A person who knows a lot about something" },
-    { word: "desk", meaning: "A table for studying" },
-    { word: "second", meaning: "One-sixtieth of a minute" },
-    { word: "library", meaning: "A place where you can borrow books" },
-   
+// เสียง
+window.onload = function () {
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+    var volumeSlider = document.getElementById("volumeSlider");
 
+// เล่น / หยุดเพลงเมื่อกดรูป
+icon.onclick = function () {
+    if (mySong.paused) {
+        mySong.play();
+        icon.src = "/img/pause.png"; // เปลี่ยนเป็นไอคอนหยุด
+    } else {
+        mySong.pause();
+        icon.src = "/img/play.png"; // เปลี่ยนเป็นไอคอนเล่น
+    }
+};
 
+// ปรับระดับเสียง
+volumeSlider.addEventListener("input", function () {
+        var volume = parseFloat(volumeSlider.value); // แปลงค่าเป็นตัวเลข
+        mySong.volume = volume;
+        console.log("Volume:", mySong.volume); // ตรวจสอบค่าที่อัปเดต
+    });
+};
+
+//ปุ่ม enter
+document.addEventListener("DOMContentLoaded", function () {
+    const input = document.querySelector(".input"); // ดึง input
+    const checkButton = document.querySelector(".check-word"); // ดึงปุ่ม Check
     
-    
-];
+    input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+        // ตรวจสอบว่ากด Enter
+        event.preventDefault(); // ป้องกันการรีเฟรชหน้าเว็บ (ถ้ามีฟอร์ม)
+        checkButton.click(); // กดปุ่ม Check อัตโนมัติ
+        }
+    });
+});
