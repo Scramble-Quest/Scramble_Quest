@@ -182,7 +182,8 @@ body {
 #menu-toggle:checked ~ .search,
 #menu-toggle:checked ~ .bar,
 #menu-toggle:checked ~ .Bgame,
-#menu-toggle:checked ~ .background-img {
+#menu-toggle:checked ~ .background-img,
+#menu-toggle:checked ~ .search-section {
     transform: translateX(-300px);
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -191,7 +192,8 @@ body {
 .search,
 .bar,
 .Bgame,
-.background-img {
+.background-img,
+.search-section {
     transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     will-change: transform;
 }

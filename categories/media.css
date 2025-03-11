@@ -52,11 +52,8 @@
 
     .search-section {
         width: 90%;
-        max-width: 800px;
-        padding-bottom: 3%;
-    }
-    .search-section {
-        height: 270px;
+        max-width: 375px;
+        height: 260px;
     }
 
     .searchbar-wrapper {
@@ -124,6 +121,15 @@
 
 /* Extra Small Mobile Devices (320px) */
 @media screen and (max-width: 320px) {
+    .all {
+        .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
+            width: 200px;
+            height: 330px;
+            background-color: #eee;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+    }
     .bar .logo {
         margin-left: 8px;
         h1 {
@@ -149,11 +155,9 @@
         padding: 10px 14px;
     }
 
-    .game1, .game2, .game3, .htmlgame1, .htmlgame2, .htmlgame3, .cssgame1, .cssgame2, .cssgame3 {
-        height: 340px;
-    }
 
     .pic {
+        width:200px;
         height: 200px;
     }
 
@@ -186,8 +190,8 @@
     }
 
     .filter-pill {
-        padding: 0.5rem 0.8rem;
-        font-size: 0.8rem;
+        padding: 0.2rem 0.1rem;
+        font-size: 0.7rem;
     }
 }
 /* Mobile Devices (320px - 480px) */
@@ -527,175 +531,4 @@
         justify-content: center;
     }
     
-}
-
-@media screen and (min-width: 385px){
-    .box,
-    .slide-content,
-    .search-section {
-        width: 100%;
-        max-width: 1024px;
-        margin: 0 auto;
-    }
-
-    .bar .logo {
-        margin-left: 2.5rem;
-        h1 {
-            font-size: 1.25rem;
-        }
-    }
-
-    .search-section {
-        padding:0;
-    }
-
-    .searchbar-wrapper {
-        width: 300px;
-    }
-
-    .searchbar {
-        width: 50%;
-        height: 45px;
-        font-size: 1rem;
-    }
-
-    .search {
-        gap: 1.25rem;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .all {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 1rem;
-        width: 100%;
-        padding: 0 1rem;
-        margin: 0 auto;
-    }
-
-    .all .game1, .all .game2, .all .game3,
-    .all .htmlgame1, .all .htmlgame2, .all .htmlgame3,
-    .all .cssgame1, .all .cssgame2, .all .cssgame3 {
-        width: 100%;
-        max-width: 300px;
-        height: auto;
-        padding-bottom: 20px;
-        margin: 0 auto;
-    }
-
-    .all .pic {
-        width: 100%;
-        height: auto;
-    }
-
-    .filter-pills {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .filter-pill {
-        padding: 0.3rem 0.2rem;
-        border: 2px solid #8276F5;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3scubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .BT{
-        display: flex;
-        margin-right: 0;
-        justify-content: center;
-    }
-    
-}
-
-@media screen and (min-width: 320px) {
-    .box,
-    .slide-content,
-    .search-section {
-        width: 100%;
-        max-width: 320px;
-        margin: 0 auto;
-    }
-
-    .bar .logo {
-        margin-left: 1rem;
-        h1 {
-            font-size: 1rem;
-        }
-    }
-
-    .search-section {
-        padding: 0;
-        height: auto;
-        padding-bottom: 20px;
-    }
-
-    .searchbar-wrapper {
-        width: 90%;
-        max-width: 280px;
-    }
-
-    .searchbar {
-        width: 68%;
-        height: 40px;
-        font-size: 0.9rem;
-    }
-
-    .search {
-        gap: 1rem;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .all {
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
-        gap: 1rem;
-        width: 100%;
-        padding: 0 0.5rem;
-        margin: 0 auto;
-    }
-
-    .all .game1, .all .game2, .all .game3,
-    .all .htmlgame1, .all .htmlgame2, .all .htmlgame3,
-    .all .cssgame1, .all .cssgame2, .all .cssgame3 {
-        width: 100%;
-        max-width: 280px;
-        height: auto;
-        padding-bottom: 15px;
-        margin: 0 auto;
-    }
-
-    .all .pic {
-        width: 100%;
-        height: auto;
-    }
-
-    .filter-pills {
-        display: flex;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        transform: scale(0.9);
-    }
-
-    .filter-pill {
-        padding: 0.2rem 0.5rem;
-        border: 1.5px solid #8276F5;
-        border-radius: 50px;
-        font-size: 0.8rem;
-    }
-
-    .BT {
-        display: flex;
-        margin-right: 0;
-        justify-content: center;
-    }
 }
