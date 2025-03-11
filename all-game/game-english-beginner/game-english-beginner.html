@@ -9,7 +9,23 @@
     <link rel="stylesheet" href="/all-game/game-english-beginner/media.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h2>Word Scramble</h2>
+        <div class="content">
+            <p id="lives">❤️ ❤️ ❤️</p> <!-- แสดงหัวใจ -->
+            <p id="streak">🔥 Streak: 0</p>
+            <p class="word" id="scrambled-word">???</p>
+            <div class="details">
+                <p class="hint">Hint: <span id="hint">???</span></p>
+                <p class="time">Time left: <span><b>30</b>s</span></p>
+            </div>
+            <input type="text" id="user-input" placeholder="Enter a valid word">
+            <div class="buttons">
+                <button class="refresh-word" onclick="initGame()">Refresh Word</button>
+                <button class="check-word" onclick="checkWord()">Check Word</button>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="/all-game/game-english-beginner/word.js" defer></script>
 <script src="/all-game/game-english-beginner/random.js" defer></script>
