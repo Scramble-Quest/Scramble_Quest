@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Preview - Beginner</title>
+    <link rel="stylesheet" href="/categories/Eng-Intermediate/int.css">
+    <script defer src="/categories/Eng-Intermediate/Game-Intermediate/intwords.js"></script>
+    <script defer src="/categories/Eng-Intermediate/int.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="bar">
+            <img class="img" src="/img/reColor.png" alt="Logo">
+            <h1>Scramble Quest - Vocabulary
+        </div>
+    </header>
+    <header>
+        <div class="learn">
+        <center><h2>เรียนรู้คำศัพท์ก่อนเล่นเกม</h2></center>
+    </header>
+    </div>  
+    <center><select id="level-select"></center>
+        <option value="begin">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+    </select>
+    <section class="vocab-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Word</th>
+                    <th>Meaning</th>
+                </tr>
+            </thead>
+            <tbody id="vocab-list">
+            </tbody>
+        </table>
+    </section>
+    <div class="background-video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="/img/Background Pattern 1080p 30s.mp4" type="video/mp4">
+        </video>
+    </div>
+    <button onclick="startGame()" class="start-btn">เริ่มเกม</button>
+
+</body>
+</html>

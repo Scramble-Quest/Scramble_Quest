@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Main</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="/categories/Eng-Intermediate/Game-Intermediate/gint.css" rel="stylesheet">
-        <script src="/categories/Eng-Intermediate/Game-Intermediate/wordgint.js" defer></script>
-        <script src="/categories/Eng-Intermediate/Game-Intermediate/randomgint.js" defer></script>
-    </head>
-    <body>
-        <div class="container">
-            <h2>Word Scramble</h2>
-            <div class="content">
-                <p class="word"></p>
-                <div class="details">
-                    <p class="hint">Hint: <span></span></p>
-                    <p class="time">Time left: <span><b>30</b>s</span></p>
-                </div>
-                <input type="text" placeholder="Enter a valid word">
-                <div class="buttons">
-                    <button class="refresh-word">Refresh Word</button>
-                    <button class="check-word">Check Word</button>
-                </div>
+<head>
+    <title>Intermediate Level</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/categories/Eng-Intermediate/Game-Intermediate/gint.css" rel="stylesheet">
+    <script src="/categories//Eng-Intermediate/Game-Intermediate/intwords.js" defer></script>
+    <script src="/categories/Eng-Intermediate/Game-Intermediate/intrandom.js" defer></script>
+    <script src="/categories/Eng-Intermediate/Game-Intermediate/intenterbutton.js"></script>
+    <script src="/categories/Eng-Intermediate/Game-Intermediate/intmusic.js"></script>
+</head>
+<body>
+    <header>
+        <div class="bar">
+            <img class="img" src="/img/reColor.png" alt="Logo">
+            <h1>Scramble Quest - Intermediate
+        </div>
+    </header>
+
+    <main>
+    <div class="container">
+        <h2>Word Scramble</h2>
+        <div class="content">
+            <p id="lives">❤️ ❤️ ❤️</p> 
+            <p id="streak">🔥 Streak: 0</p>
+            <p id="word-progress">Word: 0 / 0</p> 
+
+            <p class="word" id="scrambled-word">???</p>
+            <div class="details">
+                <p class="hint">Hint: <span id="hint">???</span></p>
+                <p class="time">Time left: <span><b>30</b>s</span></p>
+            </div>
+            <input type="text" id="user-input" placeholder="Enter a valid word">
+            <div class="buttons">
+                <button class="refresh-word" onclick="initGame()">Refresh Word</button>
+                <button class="check-word" onclick="checkWord()">Check Word</button>
             </div>
         </div>
-    </body>
+    </div>
+</main>
+                
+                <div class="background-video-container">
+                    <video autoplay muted loop id="background-video">
+                        <source src="/img/Background Pattern 1080p 30s.mp4" type="video/mp4">
+                    </video>
+                </div>
+            <div class="music">
+            <img src="/img/pause.png" id="icon" alt="Play/Pause Button">
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.6">
+        </div>
+
+        <audio id="mySong" loop>
+            <source src="/img/what the bunny doin.wav" type="audio/wav">
+        </audio>
+
+        
+</body>
 </html>
