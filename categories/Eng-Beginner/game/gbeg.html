@@ -4,6 +4,8 @@
     <title>Beginner Level</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/img/reColor.png" type="image/x-icon">
+    <link href="/categories/Eng-Beginner/game/media.css" rel="stylesheet">
     <link href="/categories/Eng-Beginner/game/gbeg.css" rel="stylesheet">
     <script src="/categories/Eng-Beginner/game/script.js"defer></script>
     <script src="/categories/Eng-Beginner/game/wordgbeg.js" defer></script>
@@ -13,6 +15,31 @@
 <body>
     <span class="loader"></span>
     <div id="preloader"></div>
+    <a href="/categories/categories.html" class="back-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 12H5"/>
+            <path d="M12 19l-7-7 7-7"/>
+        </svg>
+        <span>Back</span>
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <div class="slide-menu">
+        <ul>
+            <li><a href="/how-to-use/howtouse.html">วิธีการใช้งาน</a></li>
+            <li><a href="/categories/categories.html">คอร์ส</a></li>
+            <li><a href="#">เกมส์ทั้งหมด</a></li>
+            <li><a href="/contact-us/contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </div>
+
+    <label for="menu-toggle" class="menu-toggle">
+        <div class="toggle-lines top-line"></div>
+        <div class="toggle-lines middle-line"></div>
+        <div class="toggle-lines bottom-line"></div>
+    </label>
+
+    <div class="overlay"></div>
+
     <div class="bar">
         <div class="logo">
             <a href="/index.html">
@@ -56,8 +83,8 @@
         <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.6">
     </div>
     <audio id="mySong" src="/img/what the bunny doin.wav" autoplay loop></audio>
-    <audio id="correctSound" src="path/to/correct.mp3"></audio>
-    <audio id="wrongSound" src="path/to/wrong.mp3"></audio>
-    <audio id="gameOverSound" src="path/to/gameover.mp3"></audio>
+    <audio id="correctSound" src="#"></audio>
+    <audio id="wrongSound" src="#"></audio>
+    <audio id="gameOverSound" src="#"></audio>
 </body>
 </html>

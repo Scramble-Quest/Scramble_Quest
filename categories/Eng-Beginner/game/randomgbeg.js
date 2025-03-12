@@ -13,38 +13,31 @@ let usedWords = new Set();
 
 let wordText, hintText, inputField, streakText, timeText, livesText;
 
-window.onload = () => {
+// รอให้โหลดข้อมูลเสร็จก่อนเริ่มเกม
+document.addEventListener('DOMContentLoaded', () => {
     wordText = document.getElementById("scrambled-word");
     hintText = document.getElementById("hint");
     inputField = document.getElementById("user-input");
     streakText = document.getElementById("streak");
-    timeText = document.querySelector(".time span b"); // ดึง element ที่แสดงเวลา
-    livesText = document.getElementById("lives"); // ดึง element ที่แสดงหัวใจ
+    timeText = document.querySelector(".time span b");
+    livesText = document.getElementById("lives");
 
-    console.log("Available words:", availableWords); // 🔥 ตรวจสอบว่าคำศัพท์โหลดถูกต้อง
+    // เริ่มเกมหลังจากโหลดข้อมูลเสร็จ
     initGame();
-};
+});
 
 // ฟังก์ชันเริ่มเกมใหม่
 const initGame = () => {
     // ตรวจสอบว่าใช้คำครบทุกคำแล้วหรือไม่
     if (usedWords.size === totalWords) {
-        // แสดงคะแนนสุดท้ายเมื่อเล่นครบทุกคำ
         showFinalScore();
         return;
     }
 
-    playedWords++;
-    clearInterval(timer); // ยกเลิกตัวจับเวลาเดิม
-    timeLeft = 30; // ตั้งเวลาใหม่
-    updateTimerDisplay(); // อัพเดทการแสดงเวลา
-    updateLivesDisplay(); // อัพเดทการแสดงชีวิต
-    startTimer(); // เริ่มจับเวลาใหม่
-
-    // วนลูปจนกว่าจะได้คำที่ยังไม่เคยใช้
+    // เลือกคำที่ยังไม่เคยใช้
     let selectedWord;
     do {
-        let randomIndex = Math.floor(Math.random() * words.length);
+        const randomIndex = Math.floor(Math.random() * words.length);
         selectedWord = words[randomIndex];
     } while (usedWords.has(selectedWord.word));
 
@@ -52,20 +45,28 @@ const initGame = () => {
     usedWords.add(selectedWord.word);
     currentWord = selectedWord;
 
-    // สร้างคำสลับที่ต้องไม่เหมือนคำเดิม
+    // รีเซ็ตและเริ่มตัวจับเวลาใหม่
+    clearInterval(timer);
+    timeLeft = 30;
+    updateTimerDisplay();
+    updateLivesDisplay();
+    startTimer();
+
+    // สร้างคำสลับที่ไม่เหมือนคำเดิม
     let scrambledWord;
     do {
         scrambledWord = scrambleWord(currentWord.word);
     } while (scrambledWord === currentWord.word);
 
+    // อัพเดทการแสดงผล
     wordText.innerText = scrambledWord;
     hintText.innerText = `Hint: ${currentWord.hint}` || "No hint available";
     inputField.value = "";
     inputField.style.background = "white";
-
-    // อัพเดทความคืบหน้า
-    document.getElementById('progress').innerText = 
-        `คำ: ${playedWords}/${totalWords}`;
+    document.getElementById('progress').innerText = `คำ: ${playedWords}/${totalWords}`;
+    playedWords++; // ย้ายมาไว้ท้ายสุดหลังจากใช้คำนั้นแล้ว
+    reset();
+    usedWords.clear();
 };
 
 const startTimer = () => {
@@ -163,7 +164,11 @@ const scrambleWord = (word) => {
     } while (scrambled === word && word.length > 1);
     return scrambled;
 };
-
+const reset = () => {
+    playedWords = 0;
+    document.getElementById('progress').innerText = 
+        `คำ: ${playedWords}/${totalWords}`;
+}
 // ฟังก์ชันรีเซ็ตเกม
 const resetGame = () => {
     streak = 0;
@@ -171,8 +176,14 @@ const resetGame = () => {
     lives = 3;
     playedWords = 0;
     usedWords.clear(); // ล้างชุดคำที่ใช้แล้วทั้งหมด
+    
+    // อัพเดทการแสดงผล Streak
+    streakText.innerText = `🔥 Streak: ${streak}`;
+    
+    // อัพเดทการแสดงผลความคืบหน้า
     document.getElementById('progress').innerText = 
         `Progress: ${playedWords}/${totalWords}`;
+        
     initGame();
 };
 
