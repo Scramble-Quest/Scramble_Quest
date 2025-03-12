@@ -6,8 +6,12 @@ const wordText = document.querySelector(".word"),
   checkBtn = document.querySelector(".check-word");
 
 let correctWord, timer;
+let gameStarted = false;
 
 const initTimer = (maxTime) => {
+  // ตรวจสอบว่าเกมเริ่มแล้วหรือยัง
+  if (!window.gameStarted) return;
+
   clearInterval(timer);
   timer = setInterval(() => {
     if (maxTime > 0) {
@@ -23,7 +27,14 @@ const initTimer = (maxTime) => {
 };
 
 const initGame = () => {
-  initTimer(30);
+  // รีเซ็ตเวลาเป็น 30 วินาที
+  timeText.innerText = "30";
+
+  // เริ่มจับเวลาเฉพาะเมื่อเกมเริ่มแล้ว
+  if (window.gameStarted) {
+    initTimer(30);
+  }
+
   let randomObj = words[Math.floor(Math.random() * words.length)]; //getting random object from words
   let wordArray = randomObj.word.split(""); //splitting each letter of random word
   for (let i = wordArray.length - 1; i > 0; i--) {

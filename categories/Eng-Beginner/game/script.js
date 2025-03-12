@@ -65,3 +65,13 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(startGame, 3000);
     }
 });
+
+// Update the volume control
+volumeSlider.addEventListener("input", function () {
+    var volume = parseFloat(volumeSlider.value);
+    mySong.volume = volume;
+    // Also update sound effects volume
+    correctSound.volume = volume;
+    wrongSound.volume = volume;
+    gameOverSound.volume = volume;
+});

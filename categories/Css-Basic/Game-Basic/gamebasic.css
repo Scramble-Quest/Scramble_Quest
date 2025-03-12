@@ -31,6 +31,7 @@ body{
     display: inline-block;
     position: absolute;
     transform: rotate(-45deg);
+    will-change: transform;
 }
 .loader::before {
     content: '';  
@@ -314,4 +315,40 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     cursor: pointer;
     box-shadow: -100px 0 0 100px #fff;
+}
+
+/* เพิ่มการ optimize สำหรับมือถือ */
+@media (max-width: 768px) {
+    .container {
+        min-width: 90%;
+        min-height: auto;
+        margin: 10px;
+    }
+
+    .content .word {
+        padding: 25px 30px 10px 30px;
+        font-size: 30px;
+        letter-spacing: 15px;
+    }
+
+    .content .details {
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+
+    .content .buttons button {
+        width: 110px;
+        font-size: 16px;
+    }
+}
+
+/* ปรับปรุง performance ของ background video บนมือถือ */
+@media (max-width: 768px) {
+    #background-video {
+        display: none;
+    }
+    
+    body {
+        background-image:url(/img/bgpurple.png);
+    }
 }
