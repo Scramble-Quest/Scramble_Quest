@@ -177,7 +177,7 @@
 
 
 
-=======
+
 .menu-toggle {
     position: fixed;
     right: 3rem;
@@ -282,10 +282,10 @@
 
 input[type="checkbox"] {
     display: none;
-  }
+}
 
 body {
     position: relative;
     transition: transform 0.3s ease;
 }
->>>>>>> 4cf8dc5ca29f4323b59863bb42603843a2325be1
+
