@@ -413,28 +413,8 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="checkbox"] {
     display: none;
   }
-  
+
 body {
     position: relative;
     transition: transform 0.3s ease;
-}
-
-#menu-toggle:checked ~ .box,
-#menu-toggle:checked ~ .search,
-#menu-toggle:checked ~ .bar,
-#menu-toggle:checked ~ .Bgame,
-#menu-toggle:checked ~ .background-img,
-#menu-toggle:checked ~ .search-section {
-    transform: translateX(-300px);
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.box,
-.search,
-.bar,
-.Bgame,
-.background-img,
-.search-section {
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform;
 }
