@@ -39,11 +39,12 @@
         </video>
     </div>
     <div class="music">
-        <img src="/img/pause.png" id="icon">
+        <img id="icon" src="/img/play.png" alt="Play/Pause">
         <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.6">
     </div>
-    <audio id="mySong" autoplay loop>
-        <source src="/img/what the bunny doin.wav" type="audio/wav">
-    </audio>
+    <audio id="mySong" src="/img/what the bunny doin.wav" autoplay loop></audio>
+    <audio id="correctSound" src="path/to/correct.mp3"></audio>
+    <audio id="wrongSound" src="path/to/wrong.mp3"></audio>
+    <audio id="gameOverSound" src="path/to/gameover.mp3"></audio>
 </body>
 </html>
