@@ -42,7 +42,7 @@ const initGame = () => {
     } while (usedWords.has(selectedWord.word));
 
     // เพิ่มคำที่เลือกเข้าไปในชุดคำที่ใช้แล้ว
-    usedWords.add(selectedWord.word);
+    usedWords.add(selectedWord.word-1);
     currentWord = selectedWord;
 
     // รีเซ็ตและเริ่มตัวจับเวลาใหม่
@@ -64,10 +64,7 @@ const initGame = () => {
     inputField.value = "";
     inputField.style.background = "white";
     document.getElementById('progress').innerText = `คำ: ${playedWords}/${totalWords}`;
-    playedWords++; // ย้ายมาไว้ท้ายสุดหลังจากใช้คำนั้นแล้ว
-    reset();
-    usedWords.clear();
-};
+}
 
 const startTimer = () => {
     timer = setInterval(() => {
@@ -129,15 +126,17 @@ const checkWord = () => {
             showConfirmButton: false
         });
         inputField.style.background = "#ffcccc";
-        streak = 0; // 🔥 รีเซ็ต Streak ถ้าตอบผิด
+        streak = 0;
         streakText.innerText = `🔥 Streak: ${streak}`;
-        reduceLife(); // 🔥 ลดหัวใจเมื่อผิด
+        reduceLife();
         return;
     }
-
+    
     score++;
-    streak++; // เพิ่มค่า Streak ถ้าตอบถูก
-    inputField.style.background = "#ccffcc"; // เปลี่ยนเป็นสีเขียวเมื่อถูก
+    streak++;
+    playedWords++
+        // ย้ายมาไว้ตรงนี้ เพิ่มค่าเมื่อตอบถูกเท่านั้น
+    inputField.style.background = "#ccffcc";
     streakText.innerText = `🔥 Streak: ${streak}`;
     
     Swal.fire({
@@ -153,6 +152,15 @@ const checkWord = () => {
 
     initGame();
 };
+const refresh = () => {
+    if(playedWords < playedWords+1){
+        playedWords++
+    }else if (playedWords > playedWords+1){
+        playedWords--
+    }else{
+        playedWords
+    }
+};
 
 // ฟังก์ชันสลับตัวอักษรในคำ โดยต้องไม่เหมือนคำเดิม
 const scrambleWord = (word) => {
@@ -164,11 +172,7 @@ const scrambleWord = (word) => {
     } while (scrambled === word && word.length > 1);
     return scrambled;
 };
-const reset = () => {
-    playedWords = 0;
-    document.getElementById('progress').innerText = 
-        `คำ: ${playedWords}/${totalWords}`;
-}
+
 // ฟังก์ชันรีเซ็ตเกม
 const resetGame = () => {
     streak = 0;
