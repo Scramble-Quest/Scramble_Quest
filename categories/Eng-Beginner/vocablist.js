@@ -22,9 +22,4 @@ const vocabList = [
     { word: "desk", meaning: "A table for studying" },
     { word: "second", meaning: "One-sixtieth of a minute" },
     { word: "library", meaning: "A place where you can borrow books" },
-   
-
-
-    
-    
 ];
