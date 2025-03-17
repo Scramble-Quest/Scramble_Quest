@@ -34,5 +34,5 @@ document.addEventListener("DOMContentLoaded", function () {
 // ฟังก์ชันเริ่มเกม
 function startGame() {
     let selectedLevel = document.getElementById("level-select").value;
-    window.location.href = `game/gbeg.html?level=${selectedLevel}`;
+    window.location.href = `/categories/Eng-Beginner/game/gbeg.html?level=${selectedLevel}`;
 }
