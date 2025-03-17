@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const heartsRemainingElement = document.getElementById('heartsRemaining');
     const playAgainBtn = document.getElementById('playAgainBtn');
     const backToMenuBtn = document.getElementById('backToMenuBtn');
-
+  
     // Game variables (ตัวแปรของเกม)
     let gameWords = [];
     let currentWord = '';
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let gameActive = true;
     let totalWords = wordList.length; // Set totalWords to the actual number of words in word.js (กำหนด totalWords เป็นจำนวนคำจริงใน word.js)
     let totalAnsweredWords = 0;
-
+  
     // Initialize game (เริ่มต้นเกม)
     function initGame() {
         // Reset game variables (รีเซ็ตตัวแปรของเกม)
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Start the first word (เริ่มคำแรก)
         nextWord();
     }
-
+  
     // Select random words for the game (เลือกคำแบบสุ่มสำหรับเกม)
     function selectGameWords() {
         // Shuffle the word list (สลับลำดับรายการคำ)
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Initialize available words (เริ่มต้นคำที่ใช้ได้)
         availableWords = [...gameWords];
     }
-
+  
     // Generate the next word (สร้างคำถัดไป)
     function nextWord() {
         if (!gameActive) return;
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         userGuessInput.value = '';
         userGuessInput.focus();
     }
-
+  
     // Scramble the word (เรียงสลับตัวอักษรของคำ)
     function scrambleWord(word) {
         const wordArray = word.split('');
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // If the scrambled word is the same as the original word, scramble again (หากคำที่เรียงสลับเหมือนกับคำเดิม ให้สลับอีกครั้ง)
         return scrambled === word ? scrambleWord(word) : scrambled;
     }
-
+  
     // Display the scrambled word (แสดงคำที่เรียงสลับ)
     function displayScrambledWord(word) {
         scrambledWordElement.innerHTML = '';
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
             scrambledWordElement.appendChild(letterElement);
         });
     }
-
+  
     // Reset the timer (รีเซ็ตตัวจับเวลา)
     function resetTimer() {
         clearInterval(timer);
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 1000);
     }
-
+  
     // Time out function (ฟังก์ชันหมดเวลา)
     function timeOut() {
         if (!gameActive) return;
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
             nextWord();
         });
     }
-
+  
     // Move current word to used words (ย้ายคำปัจจุบันไปคำที่ใช้แล้ว)
     function moveWordToUsed() {
         const wordIndex = availableWords.findIndex(item => item.word === currentWord);
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
             availableWords.splice(wordIndex, 1);
         }
     }
-
+  
     // Check the user's guess (ตรวจสอบคำตอบของผู้ใช้)
     function checkAnswer() {
         if (!gameActive) return;
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     }
-
+  
     // Skip the current word (ข้ามคำปัจจุบัน)
     function skipWord() {
         if (!gameActive) return;
@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Go to next word (ไปคำถัดไป)
         nextWord();
     }
-
+  
     // Update hearts display (อัปเดตการแสดงหัวใจ)
     function updateHearts() {
         hearts.forEach((heart, index) => {
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-
+  
     // End the game (จบเกม)
     function endGame(completed) {
         if (!gameActive) return;
@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
             showResults();
         }
     }
-
+  
     // Show game results (แสดงผลลัพธ์ของเกม)
     function showResults() {
         finalScoreElement.textContent = `${correctCount}/${totalWords}`;
@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         resultsContainer.style.display = 'flex';
     }
-
+  
     // Event listeners (ตัวดักจับเหตุการณ์)
     checkBtn.addEventListener('click', checkAnswer);
     
@@ -353,7 +353,8 @@ document.addEventListener('DOMContentLoaded', () => {
             checkAnswer();
         }
     });
-
+  
     // Start the game when page loads (เริ่มเกมเมื่อโหลดหน้าเสร็จ)
     initGame();
-});
+  });
+  
