@@ -80,18 +80,8 @@ const wordList = [
         word: "EXPERT",
         hint: "Person with extensive knowledge",
     },
-    {
-        word: "DESK",
-        hint: "A table for studying",
-    },
-    {
-        word: "SECOND",
-        hint: "One-sixtieth of a minute",
-    },
-    {
-        word: "LIBRARY",
-        hint: "Place containing collection of books",
-    },
+    
+        
 ];
 
 // Export the word list
