@@ -267,7 +267,7 @@
 
 /* Landscape orientation adjustments */
 @media screen and (orientation: landscape) and (max-height: 600px) {
-   .music {
+.music {
         left: 10px;
         bottom: 10px;
     }

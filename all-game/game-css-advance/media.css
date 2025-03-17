@@ -27,15 +27,6 @@
         padding: 10px 15px;
     }
 
-    .stats {
-        flex-direction: column; /* Stack stats vertically */
-        align-items: center;
-        gap: 10px;
-    }
-    .hearts {
-        margin-bottom: 5px;
-    }
-
     .word-container {
         margin: 20px 0;
     }
@@ -57,14 +48,7 @@
         padding: 8px; /* Smaller button padding */
         font-size: 14px;
     }
-    .results-card{
-        padding: 15px;
-        width: 95%;
-    }
 
-    .results-stats p{
-        font-size: 16px;
-    }
     .loader {
         scale: 1.5;
     }
@@ -223,18 +207,12 @@
    .container {
         max-width: 700px;
     }
-    .results-card {
-        max-width: 600px;
-    }
 }
 
 /* MacBook Air 13-inch (1280px) */
 @media screen and (min-width: 1280px) {
      .container {
         max-width: 900px;
-    }
-    .results-card {
-        max-width: 800px;
     }
 }
 
@@ -243,9 +221,6 @@
    .container {
         max-width: 1100px;
     }
-    .results-card {
-        max-width: 1000px;
-    }
 }
 
 /* MacBook Air 15-inch (1536px) */
@@ -253,18 +228,12 @@
     .container {
         max-width: 1300px;
     }
-     .results-card {
-        max-width: 1200px;
-    }
 }
 
 /* 4K Displays (2560px) */
 @media screen and (min-width: 2560px) {
    .container {
         max-width: 1800px;
-    }
-     .results-card {
-        max-width: 1700px;
     }
 }
 
@@ -298,7 +267,7 @@
 
 /* Landscape orientation adjustments */
 @media screen and (orientation: landscape) and (max-height: 600px) {
-   .music {
+.music {
         left: 10px;
         bottom: 10px;
     }

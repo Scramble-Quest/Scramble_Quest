@@ -1,35 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Game elements (องค์ประกอบของเกม)
     const scrambledWordElement = document.getElementById('scrambledWord');
+    const backBtn = document.getElementById('backBtn');
     const hintElement = document.getElementById('hint');
     const timerElement = document.getElementById('timer');
     const userGuessInput = document.getElementById('userGuess');
     const checkBtn = document.getElementById('checkBtn');
     const skipBtn = document.getElementById('skipBtn');
-    const backBtn = document.getElementById('backBtn');
-    const wordCountElement = document.getElementById('wordCount');
 
     // Game variables (ตัวแปรของเกม)
     let gameWords = [];
     let currentWord = '';
     let scrambledWord = '';
     let availableWords = [];
-    let usedWords = [];
     let timer;
-    let timeLeft = 30;
-    let correctCount = 0;
-    let gameActive = true;
-    let totalWords = wordList.length; // Set totalWords to the actual number of words in word.js (กำหนด totalWords เป็นจำนวนคำจริงใน word.js)
+    let usedWords = [];
     let totalAnsweredWords = 0;
+    let timeLeft = 30;
+    let gameActive = true;
+
 
     // Initialize game (เริ่มต้นเกม)
     function initGame() {
         // Reset game variables (รีเซ็ตตัวแปรของเกม)
         gameActive = true;
-        correctCount = 0;
-        timeLeft = 30;
         usedWords = [];
         totalAnsweredWords = 0;
+        timeLeft = 30;
 
         // Reset UI (รีเซ็ต UI)
         timerElement.textContent = '30';
@@ -61,7 +58,6 @@ document.addEventListener('DOMContentLoaded', () => {
          if (availableWords.length === 0) {
             availableWords = [...gameWords].filter(wordObj => !usedWords.some(usedObj => usedObj.word === wordObj.word)); // Filter out already used words.
              usedWords = [];
-             totalAnsweredWords=0;
             if(availableWords.length === 0){
                 availableWords = [...gameWords];
             }
@@ -168,10 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Check if the answer is correct (ตรวจสอบว่าคำตอบถูกต้องไหม)
         if (userGuess === currentWord) {
-            // Correct answer (คำตอบถูกต้อง)
-            correctCount++;
-            wordCountElement.textContent = `${correctCount}/${totalWords}`;
-
             // Show success alert (แสดงการแจ้งเตือนสำเร็จ)
             Swal.fire({
                 icon: 'success',
@@ -181,6 +173,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 showConfirmButton: false
             }).then(() => {
                 // Move current word to used words (ย้ายคำปัจจุบันไปคำที่ใช้แล้ว)
+                
                 moveWordToUsed();
 
                 // Increment total answered words (เพิ่มจำนวนคำที่ตอบแล้ว)
@@ -230,6 +223,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     backBtn.addEventListener('click', () => {
         // In a real app, this would navigate back to the menu (ในแอปจริง นี่จะนำทางกลับไปยังเมนู)
+        clearInterval(timer);
+        gameActive = false;
         // For now, just reload the page (ตอนนี้ แค่โหลดหน้าซ้ำ)
         location.reload();
     });
