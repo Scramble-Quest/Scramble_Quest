@@ -216,10 +216,10 @@ body {
 
 .slide-menu ul li a {
     display: block;
+    font-size: 30px;
     color: rgba(255, 255, 255, 0.7);
     padding: 15px 20px;
     text-decoration: none;
-    font-size: 1.25rem;
     font-weight: 600;
     transition: var(--transition);
 }
