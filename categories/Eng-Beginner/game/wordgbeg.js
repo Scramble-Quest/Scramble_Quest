@@ -1,7 +1,7 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",
+        word: "APPLE",//ตัวใหญ่เท่านั้น
         hint: "A red or green fruit",
     },
     {
