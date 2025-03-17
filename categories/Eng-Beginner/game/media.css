@@ -153,25 +153,6 @@
     .logo h1 {
         font-size: 22px; /* Slightly larger logo text */
     }
-
-    .menu-toggle {
-        display: none; /* Hide the hamburger menu */
-    }
-
-    .slide-menu {
-        display: none;
-    }
-
-    #menu-toggle:checked ~ .container,
-    #menu-toggle:checked ~ .bar,
-    #menu-toggle:checked ~ .music,
-    #menu-toggle:checked ~ .background-img,
-    #menu-toggle:checked ~ .search-section {
-        transform: translateX(0);
-    }
-     .overlay {
-        display: none;
-    }
     .letter {
         width: 40px;
         height: 40px;
