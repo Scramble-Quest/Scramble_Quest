@@ -137,15 +137,6 @@
     .logo h1 {
         font-size: 22px; /* Slightly larger logo text */
     }
-
-    .menu-toggle {
-        display: none; /* Hide the hamburger menu */
-    }
-
-    .slide-menu {
-        display: none;
-    }
-
     #menu-toggle:checked ~ .container,
     #menu-toggle:checked ~ .bar,
     #menu-toggle:checked ~ .music,
