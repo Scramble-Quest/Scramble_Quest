@@ -317,6 +317,52 @@ input[type="range"]::-webkit-slider-thumb {
     box-shadow: -100px 0 0 100px #fff;
 }
 
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.popup.success {
+    border: 3px solid #4CAF50;
+}
+
+.popup.error {
+    border: 3px solid #f44336;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup button {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game-complete {
+    background: #f8f9fa;
+    padding: 30px;
+}
+
 /* เพิ่มการ optimize สำหรับมือถือ */
 @media (max-width: 768px) {
     .container {

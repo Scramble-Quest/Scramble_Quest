@@ -191,59 +191,6 @@ body {
     will-change: transform;
 }
 
-.bar{
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #FFF;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    a{
-        text-decoration: none;
-    }
-    .logo{
-        display: flex;
-        width: 95%;
-        height: 60px;
-        .img{
-            display: flex;
-            width: 40px;
-            height: 40px;
-            
-        }
-        h1{
-            color: #303030;
-            font-size: 20px;
-            font-weight: 500;
-            padding-top: 5px;
-            margin: 0;
-        }
-    }
-    .menu{
-        margin-right: 50px;
-    }
-}
-.logo {
-    display: flex;
-    align-items: center;
-    margin-left: 1%;
-}
-
-.logo img {
-    width: 40px;
-    height: 40px;
-}
-
-.logo h1 {
-    color: #303030;
-    font-size: 20px;
-    margin-left: 15px;
-}
-
 body{
     display: flex;
     align-items: center;
@@ -399,7 +346,7 @@ input[type="range"] {
 
 input[type="range"]:hover {
     width: 200px;
-    height: 15px;
+    height: 18px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -458,163 +405,229 @@ input[type="range"]::-webkit-slider-thumb {
     }
 }
 
-.container{
-    width: 500px;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    padding: 35px 45px;
-}
-.container h2{
-    font-size: 22px;
-    font-weight: 600;
-    color: #1f1c24;
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #ebeff4;
-}
-.container .content{
-    margin: 20px 0;
-}
-.container .word{
-    font-size: 28px;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 20px;
-    margin-right: -20px;
-    text-transform: uppercase;
-    color: #1f1c24;
-}
-.content .details{
-    margin: 25px 0 20px;
-}
-.details p{
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: #666;
-    font-weight: 800;
-}
-.details p b{
-    font-weight: 800;
-    color: #1f1c24;
-}
-.content input{
+.container {
     width: 100%;
-    height: 50px;
-    outline: none;
-    font-size: 16px;
-    padding: 0 16px;
-    border-radius: 50px;
-    border: 1px solid #ddd;
-    transition: all 0.3s ease;
-}
-#user-input{
-    background-color: #D9D9D9 ;
+    max-width: 500px;
+    padding: 20px;
+    z-index: 1010;
 }
 
-.content input:focus {
-    border-color: #5372F0;
-    box-shadow: 0 0 0 2px rgba(83,114,240,0.1);
-}
-.content .buttons{
+header {
     display: flex;
-    margin-top: 20px;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
-.buttons button{
+
+header h1 {
+    color: white;
+    font-size: 24px;
+}
+
+#backBtn {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
     border: none;
-    outline: none;
-    color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
     cursor: pointer;
-    padding: 15px 0;
-    font-size: 17px;
-    border-radius: 50px;
-    width: calc(100% / 2 - 8px);
-    transition: all 0.3s ease;
-}
-.buttons button:hover {
-    transform: scale(0.98);
-    opacity: 0.9;
-}
-.buttons .refresh-word{
-    background: #6c757d;
-}
-.buttons .check-word{
-    background: #5372F0;
-}
-@keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
+    font-weight: 500;
+    transition: background-color 0.3s;
 }
 
-.buttons button:active {
-    animation: shake 0.3s ease;
+#backBtn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Add these styles to your existing CSS */
-.game-stats {
+.game-card, .results-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 15px 0;
+}
+
+.stats {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    background: #f0f2f5;
-    padding: 10px;
-    border-radius: 8px;
 }
 
-.game-stats p {
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0;
+.hearts {
+    display: flex;
 }
 
-.final-score {
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #2f1c83;
+.heart {
+    margin-right: 5px;
+    font-size: 20px;
 }
 
-/* Override some SweetAlert2 styles */
-.swal2-popup {
-    font-family: "Poppins", sans-serif;
-    border-radius: 15px;
-}
-
-.swal2-title {
-    color: #2f1c83 !important;
-}
-
-.back-btn {
-    position: fixed;
-    top: 80px;
-    left: 20px;
+.streak {
     display: flex;
     align-items: center;
-    padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 30px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    color: #303030;
 }
 
-.back-btn:hover {
-    transform: translateX(-5px);
-    background: #fff;
+.fire {
+    margin-right: 5px;
 }
 
-.back-btn svg {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    stroke: #303030;
+.word-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
 }
 
-.back-btn span {
+.scrambled-word {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.letter {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.hint-container {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.timer-container {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding:4px 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+#userGuess{
+    padding: 12px;
+}
+
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.3s;
+}
+
+#skipBtn {
+    background-color: #888;
+    color: white;
+}
+
+#skipBtn:hover {
+    background-color: #777;
+}
+
+#checkBtn {
+    background-color: #4169E1;
+    color: white;
+}
+
+#checkBtn:hover {
+    background-color: #3158D0;
+}
+
+/* Results screen styles */
+.results-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1010;
+}
+
+.results-card {
+    width: 90%;
+    max-width: 400px;
+}
+
+.results-stats {
+    margin: 20px 0;
+}
+
+.results-stats p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.results-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+#playAgainBtn {
+    background-color: #4169E1;
+    color: white;
+}
+
+#playAgainBtn:hover {
+    background-color: #3158D0;
+}
+
+#backToMenuBtn {
+    background-color: #888;
+    color: white;
+}
+
+#backToMenuBtn:hover {
+    background-color: #777;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .letter {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
 }

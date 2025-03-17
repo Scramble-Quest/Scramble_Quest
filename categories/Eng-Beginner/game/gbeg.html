@@ -15,13 +15,6 @@
 <body>
     <span class="loader"></span>
     <div id="preloader"></div>
-    <a href="/categories/categories.html" class="back-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M19 12H5"/>
-            <path d="M12 19l-7-7 7-7"/>
-        </svg>
-        <span>Back</span>
-    </a>
     <input type="checkbox" id="menu-toggle" />
     <div class="slide-menu">
         <ul>
@@ -50,26 +43,65 @@
             </a>
         </div>
     </div>
-    
     <div class="container">
-        <h2>Word Scramble</h2>
-        <div class="content">
-            <div class="game-stats">
-                <p id="lives">❤️ ❤️ ❤️</p>
-                <p id="streak">🔥 Streak: 0</p>
-                <p id="progress">คำ : 0/23</p>
+        <header>
+            <button id="backBtn"><a href="/categories/categories.html" style="color: white; text-decoration: none;">← กลับ</a></button>
+        </header>
+
+        <div class="game-container">
+            <div class="game-card">
+                <h2>Word Scramble</h2>
+                <div class="divider"></div>
+
+                <div class="stats">
+                    <div class="hearts">
+                        <span class="heart">❤️</span>
+                        <span class="heart">❤️</span>
+                        <span class="heart">❤️</span>
+                    </div>
+                    <div class="streak">
+                        <span class="fire">🔥</span>
+                        <span>Streak: <span id="streakCount">???</span></span>
+                    </div>
+                    <div class="word-count">
+                        <span>คำ: <span id="wordCount">???</span></span>
+                    </div>
+                </div>
+
+                <div class="word-container">
+                    <div class="scrambled-word" id="scrambledWord"></div>
+                </div>
+
+                <div class="hint-container">
+                    <p>คำใบ้: <span id="hint"></span></p>
+                </div>
+
+                <div class="timer-container">
+                    <p>เวลาที่เหลือ: <span id="timer">30</span>วินาที</p>
+                </div>
+
+                <div class="input-container">
+                    <input type="text" id="userGuess" placeholder="ใส่คำตอบของคุณ">
+                    <div class="button-container">
+                        <button id="skipBtn">ข้าม</button>
+                        <button id="checkBtn">เช็คคำตอบ</button>
+                    </div>
+                </div>
             </div>
-            <p class="word" id="scrambled-word">???</p>
-            <div class="details">
-                <center>
-                    <p class="hint"> <span id="hint">???</span></p>
-                    <p class="time">Time left: <span><b>30</b>s</span></p>
-                </center>
+        </div>
+    </div>
+    <div class="results-container" id="resultsContainer" style="display: none;">
+        <div class="results-card">
+            <h2>ผลสรุป</h2>
+            <div class="divider"></div>
+            <div class="results-stats">
+                <p>คะแนน: <span id="finalScore">0/2</span></p>
+                <p>Streak สูงสุด: <span id="highestStreak">0</span></p>
+                <p>หัวใจที่เหลือ: <span id="heartsRemaining">0</span></p>
             </div>
-            <input type="text" id="user-input" placeholder="ใส่คำที่ถูกต้อง">
-            <div class="buttons">
-                <button class="refresh-word" onclick="initGame()">ข้าม</button>
-                <button class="check-word" onclick="checkWord()">เช็คคำ</button>
+            <div class="results-buttons">
+                <button id="playAgainBtn">เริ่มใหม่</button>
+                <button id="backToMenuBtn">กลับสู่เมนู</button>
             </div>
         </div>
     </div>

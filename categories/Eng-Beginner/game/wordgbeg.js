@@ -1,94 +1,100 @@
-let words = [
+// Word list with their corresponding hints
+const wordList = [
     {
-        word: "apple",
-        hint: "A red or green fruit"
+        word: "APPLE",
+        hint: "A red or green fruit",
     },
     {
-        word: "banana",
-        hint: "A long, curved yellow fruit"
+        word: "BANANA",
+        hint: "A long, curved yellow fruit",
     },
     {
-        word: "bread",
-        hint: "Food made from flour"
+        word: "BREAD",
+        hint: "Food made from flour",
     },
     {
-        word: "milk",
-        hint: "A white liquid from cows"
+        word: "MILK",
+        hint: "A white liquid from cows",
     },
     {
-        word: "table",
-        hint: "A piece of furniture with a flat top"
+        word: "TABLE",
+        hint: "A piece of furniture with a flat top",
     },
     {
-        word: "chair",
-        hint: "Something you sit on"
+        word: "CHAIR",
+        hint: "Something you sit on",
     },
     {
-        word: "bed",
-        hint: "A place where you sleep"
+        word: "BED",
+        hint: "A place where you sleep",
     },
     {
-        word: "father",
-        hint: "A male parent"
+        word: "FATHER",
+        hint: "A male parent",
     },
     {
-        word: "mother",
-        hint: "A female parent"
+        word: "MOTHER",
+        hint: "A female parent",
     },
     {
-        word: "run",
-        hint: "Moving fast on foot"
+        word: "RUN",
+        hint: "Moving fast on foot",
     },
     {
-        word: "eat",
-        hint: "What you do with food"
+        word: "EAT",
+        hint: "What you do with food",
     },
     {
-        word: "drink",
-        hint: "To take liquid into the mouth"
+        word: "DRINK",
+        hint: "To take liquid into the mouth",
     },
     {
-        word: "sleep",
-        hint: "To rest with your eyes closed"
+        word: "SLEEP",
+        hint: "To rest with your eyes closed",
     },
     {
-        word: "play",
-        hint: "What children love to do"
+        word: "PLAY",
+        hint: "What children love to do",
     },
     {
-        word: "book",
-        hint: "Something you read"
+        word: "BOOK",
+        hint: "Something you read",
     },
     {
-        word: "pen",
-        hint: "A tool for writing"
+        word: "PEN",
+        hint: "A tool for writing",
     },
     {
-        word: "teacher",
-        hint: "A person who teaches students"
+        word: "TEACHER",
+        hint: "A person who teaches students",
     },
     {
-        word: "pocket",
-        hint: "A bag for carrying small items"
+        word: "POCKET",
+        hint: "A bag for carrying small items",
     },
     {
-        word: "classroom",
-        hint: "A place where students learn"
+        word: "CLASS",
+        hint: "A place where students learn",
     },
     {
-        word: "expert",
-        hint: "Person with extensive knowledge"
+        word: "EXPERT",
+        hint: "Person with extensive knowledge",
     },
     {
-        word: "desk",
-        hint: "A table for studying"
+        word: "DESK",
+        hint: "A table for studying",
     },
     {
-        word: "second",
-        hint: "One-sixtieth of a minute"
+        word: "SECOND",
+        hint: "One-sixtieth of a minute",
     },
     {
-        word: "library",
-        hint: "Place containing collection of books"
+        word: "LIBRARY",
+        hint: "Place containing collection of books",
     },
-]
+];
+
+// Export the word list
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+    module.exports = wordList;
+}
