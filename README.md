@@ -15,3 +15,4 @@ minimum font-size = 14 px
 ✅contact-us เสร็จแล้ว + responsive
 ✅Eng-Beginner>game เสร็จแล้ว + responsive
 
+![alt text](image-1.png) บังคับให้ใช้ตัวใหญ่ในword 
