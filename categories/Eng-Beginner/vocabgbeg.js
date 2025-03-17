@@ -20,5 +20,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // ✅ ฟังก์ชันเริ่มเกม → ส่งระดับไปที่ `game-english-beginner.html`
 function startGame() {
-    window.location.href = "/all-game/game-english-beginner/game-english-beginner.html";
+    window.location.href = "/categories/Eng-Beginner/game/gbeg.html";
 }

@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Show timeout alert (แสดงการแจ้งเตือนหมดเวลา)
       Swal.fire({
-          icon: 'คำเติอน',
+          icon: 'warning',
           title: 'หมดเวลา!',
           text: 'คุณหมดเวลาแล้ว!',
           timer: 5000,
