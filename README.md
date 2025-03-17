@@ -8,4 +8,5 @@ minimum font-size = 14 px
 ✅index เสร็จแล้ว + reponsive
 ✅how to use เสร็จแล้ว + reponsive
 ✅contact-us เสร็จแล้ว + responsive
+✅Eng-Beginner>game เสร็จแล้ว + responsive
 
