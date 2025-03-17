@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course</title>
+    <title>Scramble Quest</title>
     <link rel="stylesheet" href="categories.css">
-    <link rel="stylesheet" href="/categories/media.css">
     <link rel="shortcut icon" href="/img/reColor.png" type="image/x-icon">
-    <script src="categories.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
 </head>
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <span class="loader"></span>
+    </div>
     
     <input type="checkbox" id="menu-toggle" />
     <div class="slide-menu">
@@ -30,18 +32,18 @@
 
     <div class="overlay"></div>
 
-    <div class="bar">
+    <header class="bar">
         <div class="logo">
             <a href="/index.html">
-            <img class="img" src="/img/reColor.png" alt="Logo" />
+                <img class="img" src="/img/reColor.png" alt="Logo" />
             </a>
             <a class="h-1" href="/index.html">
-            <h1>Scramble Quest</h1>
+                <h1>Scramble Quest</h1>
             </a>
         </div>
-    </div>
+    </header>
 
-    <div class="box">
+    <section class="hero-section">
         <div class="slideshow-container">
             <div class="slide fade">
                 <img src="/img/slide1.jpg" alt="Slide 1">
@@ -70,9 +72,9 @@
                 <span class="dot"></span>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="search-section">
+    <section class="search-section">
         <div class="search-header">
             <div class="title-wrapper">
                 <h2 class="section-title">ตะลุยคอร์ส!</h2>
@@ -88,7 +90,7 @@
                         <i class="fas fa-th-large"></i>ทั้งหมด
                     </button>
                     <button class="filter-pill" data-filter="english">
-                    <i class="fas fa-language"></i>อังกฤษ
+                        <i class="fas fa-language"></i>อังกฤษ
                     </button>
                     <button class="filter-pill" data-filter="html">
                         <i class="fab fa-html5"></i>HTML
@@ -99,119 +101,147 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="Bgame">
-        <div class="all">
-            <div class="game1">
-                <div class="pic">
-                    <img class="image" src="/img/English.jpg" alt="En number1">
+    <section class="course-grid">
+        <div class="course-container">
+            <div class="course-card game1">
+                <div class="course-image">
+                    <img src="/img/English.jpg" alt="English Beginner">
                 </div>
-                <p class="text">คำศัพท์ภาษาอังกฤษ</p>
-                <p style="color: #054bb4"><i class="fa-solid fa-fire" style="color: #8276f5; margin-right: 2%;"></i>ระดับเริ่มต้น</p>
-                <div class="BT">
-                    <a href="/categories/Eng-Beginner/vocabgbeg.html">
-                        <button class="button" style="cursor: pointer;">เริ่มเรียน</button>
-                    </a>
-                </div>
-            </div>
-            <div class="game2">
-                <div class="pic">
-                    <img class="image" src="/img/English.jpg" alt="En number2">
-                </div>
-                <p class="text">คำศัพท์ภาษาอังกฤษ</p>
-                <p style="color: #054bb4"><i class="fa-solid fa-fire" style="color: #8276f5; margin-right: 2%;"></i>ระดับกลาง</p>
-                <div class="BT">
-                    <a href="/categories/Eng-Intermediate/int.html">
-                        <button class="button" style="cursor: pointer;">เริ่มเรียน</button>
-                    </a>
+                <div class="course-info">
+                    <p class="course-title">คำศัพท์ภาษาอังกฤษ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>ระดับเริ่มต้น</p>
+                    <div class="course-action">
+                        <a href="/categories/Eng-Beginner/vocabgbeg.html">
+                            <button class="start-button">เริ่มเรียน</button>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="game3">
-                <div class="pic">
-                    <img class="image" src="/img/English.jpg" alt="En number3">
+            
+            <div class="course-card game2">
+                <div class="course-image">
+                    <img src="/img/English.jpg" alt="English Intermediate">
                 </div>
-                <p class="text">คำศัพท์ภาษาอังกฤษ</p>
-                <p style="color: #054bb4"><i class="fa-solid fa-fire" style="color: #8276f5; margin-right: 2%;"></i>ระดับสูง</p>
-                <div class="BT">
-                    <a href="/categories/Eng-Advanced/adv.html">
-                        <button class="button" style="cursor: pointer;">เริ่มเรียน</button>
-                    </a>
-                </div>
-            </div>
-            <div class="htmlgame1">
-                <div class="pic">
-                    <img class="image1" src="/img/HTML.jpg" alt="hTML number1">
-                </div>                        
-                <p class="text">การพัฒนาเว็บ</p>
-                <p  style="color: #054bb4"><i class="fa-solid fa-fire" style="color: #8276f5; margin-right: 2%;"></i>HTML ระดับเริ่มต้น</p>
-                <div class="BT">
-                    <a href="#">
-                        <button class="button" style="cursor: pointer;">เริ่มเรียน</button>
-                    </a>
+                <div class="course-info">
+                    <p class="course-title">คำศัพท์ภาษาอังกฤษ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>ระดับกลาง</p>
+                    <div class="course-action">
+                        <a href="/categories/Eng-Intermediate/int.html">
+                            <button class="start-button">เริ่มเรียน</button>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="htmlgame2">
-                <div class="pic">
-                    <img class="image1" src="/img/HTML.jpg" alt="html number1">
+            
+            <div class="course-card game3">
+                <div class="course-image">
+                    <img src="/img/English.jpg" alt="English Advanced">
                 </div>
-                <p class="text">การพัฒนาเว็บ</p>
-                <p style="color: #054bb4"><i class="fa-solid fa-fire" style="color: #8276f5; margin-right: 2%;"></i>HTML ระดับกลาง</p>
-                <div class="BT">
-                    <a href="#">
-                        <button class="button" style="cursor: pointer;">เริ่มเรียน</button>
-                    </a>
-                </div>
-            </div>
-            <div class="htmlgame3">
-                <div class="pic">
-                    <img class="image1" src="/img/HTML.jpg" alt="html number2">
-                </div>
-                <p class="text">การพัฒนาเว็บ</p>
-                <p style="color: #054bb4"><i class="fa-solid fa-fire" style="color: #8276f5; margin-right: 2%;"></i>HTML ระดับสูง</p>
-                <div class="BT">
-                    <a href="#">
-                        <button class="button" style="cursor: pointer;">เริ่มเรียน</button>
-                    </a>
+                <div class="course-info">
+                    <p class="course-title">คำศัพท์ภาษาอังกฤษ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>ระดับสูง</p>
+                    <div class="course-action">
+                        <a href="/categories/Eng-Advanced/adv.html">
+                            <button class="start-button">เริ่มเรียน</button>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="cssgame1">
-                <div class="pic">
-                    <img class="image2" src="/img/CSS.png" alt="html number3">
+            
+            <div class="course-card htmlgame1">
+                <div class="course-image">
+                    <img src="/img/HTML.jpg" alt="HTML Beginner">
                 </div>
-                <p class="text">การพัฒนาเว็บ</p>
-                <p style="color: #054bb4"><i class="fa-solid fa-fire" style="color: #8276f5; margin-right: 2%;"></i>CSS ระดับเริ่มต้น</p>
-                <div class="BT">
-                    <a href="#">
-                        <button class="button" style="cursor: pointer;">เริ่มเรียน</button>
-                    </a>
-                </div>
-            </div>
-            <div class="cssgame2">
-                <div class="pic">
-                    <img class="image2" src="/img/CSS.png" alt="html number4">
-                </div>
-                <p class="text">การพัฒนาเว็บ</p>
-                <p  style="color: #054bb4"><i class="fa-solid fa-fire" style="color: #8276f5; margin-right: 2%;"></i>CSS ระดับกลาง</p>
-                <div class="BT">
-                    <a href="#">
-                        <button class="button" style="cursor: pointer;">เริ่มเรียน</button>
-                    </a>
+                <div class="course-info">
+                    <p class="course-title">การพัฒนาเว็บ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>HTML ระดับเริ่มต้น</p>
+                    <div class="course-action">
+                        <a href="#">
+                            <button class="start-button">เริ่มเรียน</button>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="cssgame3">
-                <div class="pic">
-                    <img class="image2" src="/img/CSS.png" alt="css number1">
+            
+            <div class="course-card htmlgame2">
+                <div class="course-image">
+                    <img src="/img/HTML.jpg" alt="HTML Intermediate">
                 </div>
-                <p class="text">การพัฒนาเว็บ</p>
-                <p style="color: #054bb4"><i class="fa-solid fa-fire" style="color: #8276f5; margin-right: 2%;"></i>CSS ระดับสูง</p>
-                <div class="BT">
-                    <a href="#">
-                        <button class="button" style="cursor: pointer;">เริ่มเรียน</button>
-                    </a>
+                <div class="course-info">
+                    <p class="course-title">การพัฒนาเว็บ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>HTML ระดับกลาง</p>
+                    <div class="course-action">
+                        <a href="#">
+                            <button class="start-button">เริ่มเรียน</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-card htmlgame3">
+                <div class="course-image">
+                    <img src="/img/HTML.jpg" alt="HTML Advanced">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">การพัฒนาเว็บ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>HTML ระดับสูง</p>
+                    <div class="course-action">
+                        <a href="#">
+                            <button class="start-button">เริ่มเรียน</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-card cssgame1">
+                <div class="course-image">
+                    <img src="/img/CSS.png" alt="CSS Beginner">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">การพัฒนาเว็บ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>CSS ระดับเริ่มต้น</p>
+                    <div class="course-action">
+                        <a href="#">
+                            <button class="start-button">เริ่มเรียน</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-card cssgame2">
+                <div class="course-image">
+                    <img src="/img/CSS.png" alt="CSS Intermediate">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">การพัฒนาเว็บ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>CSS ระดับกลาง</p>
+                    <div class="course-action">
+                        <a href="#">
+                            <button class="start-button">เริ่มเรียน</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="course-card cssgame3">
+                <div class="course-image">
+                    <img src="/img/CSS.png" alt="CSS Advanced">
+                </div>
+                <div class="course-info">
+                    <p class="course-title">การพัฒนาเว็บ</p>
+                    <p class="course-level"><i class="fa-solid fa-fire"></i>CSS ระดับสูง</p>
+                    <div class="course-action">
+                        <a href="#">
+                            <button class="start-button">เริ่มเรียน</button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <script src="categories.js"></script>
 </body>
 </html>
