@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Beginner Level</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game-html-beginner</title>
-    <script src="/all-game/game-html-beginner/script.js" defer></script>
-    <script src="/all-game/game-html-beginner/word.js" defer></script>
-    <script src="/all-game/game-html-beginner/random.js" defer></script>
+    <link rel="shortcut icon" href="/img/reColor.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/all-game/game-html-beginner/media.css" rel="stylesheet">
+    <link href="/all-game/game-html-beginner/game-html-beginner.css" rel="stylesheet">
+    <script src="/all-game/game-css-beginner/script.js" defer></script>
+    <script src="/all-game/game-css-beginner/word.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <link rel="stylesheet" href="/all-game/game-html-beginner/game-html-beginner.css">
-    <link rel="stylesheet" href="/all-game/game-html-beginner/media.css">
+    <script src="/all-game/game-css-beginner/random.js" defer></script>
 </head>
 <body>
     <span class="loader"></span>
     <div id="preloader"></div>
-    <!-- Menu remains unchanged -->
     <input type="checkbox" id="menu-toggle" />
     <div class="slide-menu">
         <ul>
@@ -45,9 +45,8 @@
     </div>
     <div class="container">
         <header>
-            <a href="/categories/categories.html" style="color: white; text-decoration: none;"><button id="backBtn">← กลับ</button></a>
+            <a href="/all-game/all-game.html" style="color: white; text-decoration: none;"><button id="backBtn">← กลับ</button></a>
         </header>
-
         <div class="game-container">
             <div class="game-card">
                 <h2>Word Scramble</h2>
@@ -74,13 +73,11 @@
             </div>
         </div>
     </div>
-    <!-- Removed resultsContainer entirely -->
     <div class="background-video-container">
         <video autoplay muted loop id="background-video">
             <source src="/img/Background Pattern 1080p 30s.mp4" type="video/mp4">
         </video>
     </div>
-    <!-- Music and audio remain unchanged -->
     <div class="music">
         <img id="icon" src="/img/play.png" alt="Play/Pause">
         <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.6">
