@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Beginner Level</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game-css-advance</title>
-    <link rel="stylesheet" href="/all-game/game-css-advance/game-html-advance.css">
-    <link rel="stylesheet" href="/all-game/game-css-advance/media.css">
-    <script src="/all-game/game-css-advance/random.js" defer></script>
-    <script src="/all-game/game-css-advance/script.js" defer></script>
-    <script src="/all-game/game-css-advance/word.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/img/reColor.png" type="image/x-icon">
+    <link href="/all-game/game-css-beginner/media.css" rel="stylesheet">
+    <link href="/all-game/game-css-beginner/game-css-beginner.css" rel="stylesheet">
+    <script src="/all-game/game-css-beginner/script.js"defer></script>
+    <script src="/all-game/game-css-beginner/word.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/all-game/game-css-beginner/random.js" defer></script>
 </head>
 <body>
     <span class="loader"></span>
@@ -44,29 +45,12 @@
     </div>
     <div class="container">
         <header>
-            <button id="backBtn"><a href="/categories/categories.html" style="color: white; text-decoration: none;">← กลับ</a></button>
+            <a href="/categories/categories.html" style="color: white; text-decoration: none;"><button id="backBtn">← กลับ</button></a>
         </header>
-
         <div class="game-container">
             <div class="game-card">
                 <h2>Word Scramble</h2>
                 <div class="divider"></div>
-
-                <div class="stats">
-                    <div class="hearts">
-                        <span class="heart">❤️</span>
-                        <span class="heart">❤️</span>
-                        <span class="heart">❤️</span>
-                    </div>
-                    <div class="streak">
-                        <span class="fire">🔥</span>
-                        <span>Streak: <span id="streakCount">???</span></span>
-                    </div>
-                    <div class="word-count">
-                        <span>คำ: <span id="wordCount">???</span></span>
-                    </div>
-                </div>
-
                 <div class="word-container">
                     <div class="scrambled-word" id="scrambledWord"></div>
                 </div>
@@ -86,21 +70,6 @@
                         <button id="checkBtn">เช็คคำตอบ</button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="results-container" id="resultsContainer" style="display: none;">
-        <div class="results-card">
-            <h2>ผลสรุป</h2>
-            <div class="divider"></div>
-            <div class="results-stats">
-                <p>คะแนน: <span id="finalScore">0/2</span></p>
-                <p>Streak สูงสุด: <span id="highestStreak">0</span></p>
-                <p>หัวใจที่เหลือ: <span id="heartsRemaining">0</span></p>
-            </div>
-            <div class="results-buttons">
-                <button id="playAgainBtn">เริ่มใหม่</button>
-                <button id="backToMenuBtn"><a href="/categories/categories.html" style="color: white; text-decoration: none;">กลับสู่เมนู</a></button>
             </div>
         </div>
     </div>
