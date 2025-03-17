@@ -162,8 +162,7 @@
             position: absolute;
             right: 0px;
             top: 5%;
-            text-align: center;
-            z-index: 20;
+            text-align: center; 
             img {
                 width: 80%;
             }
@@ -290,7 +289,6 @@
             right: 0;
             top: 15%;
             text-align: center;
-            z-index: 20;
             img {
                 width: 80%;
             }
@@ -403,4 +401,66 @@
 }
 .scroll-down{
     display: none;
+}
+@media screen and (min-width: 1440px){
+    .container {
+        margin-top: 3%;
+        padding-bottom: 245px;
+        .scroll-down {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        .box-first {
+            .box1 {
+                margin: 40% 0 0 20%;
+                font-size: 52px;
+            }
+        }
+        .box-second {
+            width: 50%;
+            position: absolute;
+            right: 0;
+            top: 15%;
+            text-align: center;
+            img {
+                width: 80%;
+            }
+        }
+    }
+    .scroll-down {
+        position: absolute;
+            top: 76%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+    }
+    .container2 {
+        .all-text {
+            .head-text .h1-text {
+                font-size: 56px;
+                text-align: center;
+            }
+            .g-text {
+                .head-text1 h3 {
+                    font-size: 30px;
+                    text-align: center;
+                }
+                .head-text2 h1 {
+                    font-size: 44px;
+                    text-align: center;
+                }
+            }
+        }
+        .box-video {
+            width: 700px;
+            height: 450px;
+        }
+    }
+
+    .background-img {
+        scale: 1.3;
+    }
 }
