@@ -1,8 +1,8 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",//ตัวใหญ่เท่านั้น
-        hint: "A red or green fruit",
+        word: "<!DOCTYPE>",//ตัวใหญ่เท่านั้น
+        hint: "กำหนดประเภทของเอกสาร HTML",
     },
     {
         word: "BANANA",
