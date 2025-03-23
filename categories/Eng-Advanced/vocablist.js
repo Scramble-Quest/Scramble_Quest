@@ -27,7 +27,7 @@ let words = {
         {word: "Lawyer",hint: "ทนาย"},
         {word: "Passport",hint: "หนังสือเดินทาง"},
         {word: "Luggage",hint: "กระเป๋าเดินทาง"},
-        {word: "Nervous",hint: "รู้สึกกังวลหริือกลัว"},
+        {word: "Nervous",hint: "รู้สึกกังวล"},
         {word: "Excited",hint: "รู้สึกตื่นเต้น"},
         {word: "Discussion",hint: "การสนทนา"},
         {word: "Opinion",hint: "ความคิดเห็น"},
