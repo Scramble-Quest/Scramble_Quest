@@ -574,12 +574,12 @@ button {
 }
 
 #checkBtn {
-    background-color: #4169E1;
+    background-color: #8276F5;
     color: white;
 }
 
 #checkBtn:hover {
-    background-color: #3158D0;
+    background-color: #756ad9;
 }
 
 /* Results screen styles */
@@ -617,12 +617,12 @@ button {
 }
 
 #playAgainBtn {
-    background-color: #4169E1;
+    background-color: #8276F5;
     color: white;
 }
 
 #playAgainBtn:hover {
-    background-color: #3158D0;
+    background-color: #756ad9;
 }
 
 #backToMenuBtn {
