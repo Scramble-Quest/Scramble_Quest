@@ -1,96 +1,84 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",//ตัวใหญ่เท่านั้น
-        hint: "แอปเปิ้ล",
+        word: "APPLE",
+        hint: "ผลไม้สีแดงหรือเขียว",
     },
     {
         word: "BANANA",
-        hint: "กล้วย",
+        hint: "ผลไม้สีเหลือง โค้งยาว",
     },
     {
         word: "BREAD",
-        hint: "ขนมปัง",
+        hint: "อาหารที่ทำจากแป้ง",
     },
     {
         word: "MILK",
-        hint: "นม",
+        hint: "ของเหลวสีขาวจากวัว",
     },
     {
         word: "TABLE",
-        hint: "โต๊ะ",
+        hint: "เฟอร์นิเจอร์ที่มีพื้นเรียบด้านบน",
     },
     {
         word: "CHAIR",
-        hint: "เก้าอี้",
+        hint: "สิ่งที่คุณนั่งบนมัน",
     },
     {
         word: "BED",
-        hint: "เตียง",
+        hint: "ที่สำหรับนอนหลับ",
     },
     {
         word: "FATHER",
-        hint: "พ่อ",
+        hint: "ผู้ปกครองเพศชาย",
     },
     {
         word: "MOTHER",
-        hint: "แม่",
+        hint: "ผู้ปกครองเพศหญิง",
     },
     {
         word: "RUN",
-        hint: "วิ่ง",
+        hint: "การเคลื่อนไหวเร็วด้วยเท้า",
     },
     {
         word: "EAT",
-        hint: "กิน",
+        hint: "การกินอาหาร",
     },
     {
         word: "DRINK",
-        hint: "ดื่ม",
+        hint: "การดื่มของเหลว",
     },
     {
         word: "SLEEP",
-        hint: "นอน",
+        hint: "การพักผ่อนโดยการหลับตา",
     },
     {
         word: "PLAY",
-        hint: "เล่น",
+        hint: "สิ่งที่เด็กๆ ชอบทำ",
     },
     {
         word: "BOOK",
-        hint: "หนังสือ",
+        hint: "สิ่งที่คุณอ่าน",
     },
     {
         word: "PEN",
-        hint: "ปากกา",
+        hint: "เครื่องมือสำหรับเขียน",
     },
     {
         word: "TEACHER",
-        hint: "ครู",
+        hint: "บุคคลที่สอนนักเรียน",
     },
     {
         word: "POCKET",
-        hint: "กระเป๋า",
+        hint: "กระเป๋าเล็กๆ สำหรับใส่ของ",
     },
     {
         word: "CLASS",
-        hint: "ห้องเรียน",
+        hint: "สถานที่ที่นักเรียนเรียนรู้",
     },
     {
         word: "EXPERT",
-        hint: "ผู้เชี่ยวชาญ",
-    },
-    {
-        word: "DESK",
-        hint: "โต๊ะ",
-    },
-    {
-        word: "AIRPLANE",
-        hint: "เครื่องบิน",
-    },
-    {
-        word: "LIBRARY",
-        hint: "ห้องสมุด",
+        hint: "ผู้ที่มีความรู้ความเชี่ยวชาญสูง",
     },
 ];
 

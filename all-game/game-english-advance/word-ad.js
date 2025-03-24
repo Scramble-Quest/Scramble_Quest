@@ -1,97 +1,25 @@
 // Word list with their corresponding hints
 const wordList = [
-    {
-        word: "PERCEPTION",//ตัวใหญ่เท่านั้น
-        hint: "การรับรู้",
-    },
-    {
-        word: "Algorithm",
-        hint: "ขั้นตอนวิธี",
-    },
-    {
-        word: "Paradox",
-        hint: "ความขัดแย้ง",
-    },
-    {
-        word: "Sophisticated",
-        hint: "ช่ำชอง",
-    },
-    {
-        word: "Manipulate",
-        hint: "จัดการ",
-    },
-    {
-        word: "Innovation",
-        hint: "นวัตกรรม",
-    },
-    {
-        word: "Sustainable",
-        hint: "ยั่งยืน",
-    },
-    {
-        word: "Entrepreneur",
-        hint: "ผู้ประกอบการ",
-    },
-    {
-        word: "Collaboration",
-        hint: "การทำงานร่วมกัน",
-    },
-    {
-        word: "Synchronize",
-        hint: "ทำให้เกิดขึ้นในเวลาเดียวกัน",
-    },
-    {
-        word: "Optimization",
-        hint: "การเพิ่มประสิทธิภาพ",
-    },
-    {
-        word: "Infrastructure",
-        hint: "โครงสร้างพื้นฐาน",
-    },
-    {
-        word: "Transformation",
-        hint: "การเปลี่ยนแปลง",
-    },
-    {
-        word: "Wholehearted",
-        hint: "เต็มใจ",
-    },
-    {
-        word: "Interconnected",
-        hint: "เชื่อมโยงกัน",
-    },
-    {
-        word: "Resilience",
-        hint: "ความยืดหยุ่น",
-    },
-    {
-        word: "Kinesthetic",
-        hint: "การรับรู้ทางกาย",
-    },
-    {
-        word: "Multicultural",
-        hint: "พหุวัฒนธรรม",
-    },
-    {
-        word: "Comprehensive",
-        hint: "ครอบคลุม",
-    },
-    {
-        word: "Nonetheless",
-        hint: "กระนั้นก็ตาม",
-    },
-    {
-        word: "DEFENDANT",
-        hint: "จำเลย",
-    },
-    {
-        word: "LITIGATION",
-        hint: "การฟ้องร้อง",
-    },
-    {
-        word: "EXONERATE",
-        hint: "พ้นผิด",
-    },
+    { word: "PERCEPTION", hint: "การรับรู้" },
+    { word: "ALGORITHM", hint: "ขั้นตอนวิธี" },
+    { word: "PARADOX", hint: "ความขัดแย้ง" },
+    { word: "SOPHISTICATED", hint: "ช่ำชอง" },
+    { word: "MANIPULATE", hint: "จัดการ" },
+    { word: "INNOVATION", hint: "นวัตกรรม" },
+    { word: "SUSTAINABLE", hint: "ยั่งยืน" },
+    { word: "ENTREPRENEUR", hint: "ผู้ประกอบการ" },
+    { word: "COLLABORATION", hint: "การทำงานร่วมกัน" },
+    { word: "SYNCHRONIZE", hint: "ทำให้เกิดขึ้นในเวลาเดียวกัน" },
+    { word: "OPTIMIZATION", hint: "การเพิ่มประสิทธิภาพ" },
+    { word: "INFRASTRUCTURE", hint: "โครงสร้างพื้นฐาน" },
+    { word: "TRANSFORMATION", hint: "การเปลี่ยนแปลง" },
+    { word: "WHOLEHEARTED", hint: "เต็มใจ" },
+    { word: "INTERCONNECTED", hint: "เชื่อมโยงกัน" },
+    { word: "RESILIENCE", hint: "ความยืดหยุ่น" },
+    { word: "KINESTHETIC", hint: "การรับรู้ทางกาย" },
+    { word: "MULTICULTURAL", hint: "พหุวัฒนธรรม" },
+    { word: "COMPREHENSIVE", hint: "ครอบคลุม" },
+    { word: "NONETHELESS", hint: "กระนั้นก็ตาม" }
 ];
 
 // Export the word list
