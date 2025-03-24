@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // ✅ ตรวจสอบว่ามีคำศัพท์สำหรับ Beginner หรือไม่
     if (!words || !words['advanced']) {
-        console.error("❌ Error: ไม่พบคำศัพท์สำหรับ Beginner");
+        console.error("❌ Error: ไม่พบคำศัพท์สำหรับ Advanced");
         return;
     }
 
@@ -20,5 +20,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // ✅ ฟังก์ชันเริ่มเกม → ส่งระดับไปที่ `game-english-beginner.html`
 function startGame() {
-    window.location.href = "/categories/html2/game/game.html";
+    window.location.href = "/categories/Css-Advanced/game/game-css3.html";
 }

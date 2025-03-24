@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const vocabTable = document.getElementById("vocab-list");
 
     // ✅ ตรวจสอบว่ามีคำศัพท์สำหรับ Beginner หรือไม่
-    if (!words || !words['advanced']) {
+    if (!words || !words['begin']) {
         console.error("❌ Error: ไม่พบคำศัพท์สำหรับ Beginner");
         return;
     }
 
     // ✅ แสดงคำศัพท์ระดับ Beginner
-    words['advanced'].forEach(item => {
+    words['begin'].forEach(item => {
         let row = document.createElement("tr");
         row.innerHTML = `
             <td>${item.word}</td>
@@ -20,5 +20,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // ✅ ฟังก์ชันเริ่มเกม → ส่งระดับไปที่ `game-english-beginner.html`
 function startGame() {
-    window.location.href = "/categories/html2/game/game.html";
+    window.location.href = "/categories/Css-Basic/Game-Basic/gamebasic.html";
 }
