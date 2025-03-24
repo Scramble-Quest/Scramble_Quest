@@ -1,97 +1,25 @@
 // Word list with their corresponding hints
 const wordList = [
-    {
-        word: "APPLE",//ตัวใหญ่เท่านั้น
-        hint: "A red or green fruit",
-    },
-    {
-        word: "BANANA",
-        hint: "A long, curved yellow fruit",
-    },
-    {
-        word: "BREAD",
-        hint: "Food made from flour",
-    },
-    {
-        word: "MILK",
-        hint: "A white liquid from cows",
-    },
-    {
-        word: "TABLE",
-        hint: "A piece of furniture with a flat top",
-    },
-    {
-        word: "CHAIR",
-        hint: "Something you sit on",
-    },
-    {
-        word: "BED",
-        hint: "A place where you sleep",
-    },
-    {
-        word: "FATHER",
-        hint: "A male parent",
-    },
-    {
-        word: "MOTHER",
-        hint: "A female parent",
-    },
-    {
-        word: "RUN",
-        hint: "Moving fast on foot",
-    },
-    {
-        word: "EAT",
-        hint: "What you do with food",
-    },
-    {
-        word: "DRINK",
-        hint: "To take liquid into the mouth",
-    },
-    {
-        word: "SLEEP",
-        hint: "To rest with your eyes closed",
-    },
-    {
-        word: "PLAY",
-        hint: "What children love to do",
-    },
-    {
-        word: "BOOK",
-        hint: "Something you read",
-    },
-    {
-        word: "PEN",
-        hint: "A tool for writing",
-    },
-    {
-        word: "TEACHER",
-        hint: "A person who teaches students",
-    },
-    {
-        word: "POCKET",
-        hint: "A bag for carrying small items",
-    },
-    {
-        word: "CLASS",
-        hint: "A place where students learn",
-    },
-    {
-        word: "EXPERT",
-        hint: "Person with extensive knowledge",
-    },
-    {
-        word: "DESK",
-        hint: "A table for studying",
-    },
-    {
-        word: "SECOND",
-        hint: "One-sixtieth of a minute",
-    },
-    {
-        word: "LIBRARY",
-        hint: "Place containing collection of books",
-    },
+    { word: "PERCEPTION", hint: "การรับรู้" },
+    { word: "ALGORITHM", hint: "ขั้นตอนวิธี" },
+    { word: "PARADOX", hint: "ความขัดแย้ง" },
+    { word: "SOPHISTICATED", hint: "ช่ำชอง" },
+    { word: "MANIPULATE", hint: "จัดการ" },
+    { word: "INNOVATION", hint: "นวัตกรรม" },
+    { word: "SUSTAINABLE", hint: "ยั่งยืน" },
+    { word: "ENTREPRENEUR", hint: "ผู้ประกอบการ" },
+    { word: "COLLABORATION", hint: "การทำงานร่วมกัน" },
+    { word: "SYNCHRONIZE", hint: "ทำให้เกิดขึ้นในเวลาเดียวกัน" },
+    { word: "OPTIMIZATION", hint: "การเพิ่มประสิทธิภาพ" },
+    { word: "INFRASTRUCTURE", hint: "โครงสร้างพื้นฐาน" },
+    { word: "TRANSFORMATION", hint: "การเปลี่ยนแปลง" },
+    { word: "WHOLEHEARTED", hint: "เต็มใจ" },
+    { word: "INTERCONNECTED", hint: "เชื่อมโยงกัน" },
+    { word: "RESILIENCE", hint: "ความยืดหยุ่น" },
+    { word: "KINESTHETIC", hint: "การรับรู้ทางกาย" },
+    { word: "MULTICULTURAL", hint: "พหุวัฒนธรรม" },
+    { word: "COMPREHENSIVE", hint: "ครอบคลุม" },
+    { word: "NONETHELESS", hint: "กระนั้นก็ตาม" }
 ];
 
 // Export the word list

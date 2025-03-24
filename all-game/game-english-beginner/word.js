@@ -1,96 +1,84 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",//ตัวใหญ่เท่านั้น
-        hint: "A red or green fruit",
+        word: "APPLE",
+        hint: "ผลไม้สีแดงหรือเขียว",
     },
     {
         word: "BANANA",
-        hint: "A long, curved yellow fruit",
+        hint: "ผลไม้สีเหลือง โค้งยาว",
     },
     {
         word: "BREAD",
-        hint: "Food made from flour",
+        hint: "อาหารที่ทำจากแป้ง",
     },
     {
         word: "MILK",
-        hint: "A white liquid from cows",
+        hint: "ของเหลวสีขาวจากวัว",
     },
     {
         word: "TABLE",
-        hint: "A piece of furniture with a flat top",
+        hint: "เฟอร์นิเจอร์ที่มีพื้นเรียบด้านบน",
     },
     {
         word: "CHAIR",
-        hint: "Something you sit on",
+        hint: "สิ่งที่คุณนั่งบนมัน",
     },
     {
         word: "BED",
-        hint: "A place where you sleep",
+        hint: "ที่สำหรับนอนหลับ",
     },
     {
         word: "FATHER",
-        hint: "A male parent",
+        hint: "ผู้ปกครองเพศชาย",
     },
     {
         word: "MOTHER",
-        hint: "A female parent",
+        hint: "ผู้ปกครองเพศหญิง",
     },
     {
         word: "RUN",
-        hint: "Moving fast on foot",
+        hint: "การเคลื่อนไหวเร็วด้วยเท้า",
     },
     {
         word: "EAT",
-        hint: "What you do with food",
+        hint: "การกินอาหาร",
     },
     {
         word: "DRINK",
-        hint: "To take liquid into the mouth",
+        hint: "การดื่มของเหลว",
     },
     {
         word: "SLEEP",
-        hint: "To rest with your eyes closed",
+        hint: "การพักผ่อนโดยการหลับตา",
     },
     {
         word: "PLAY",
-        hint: "What children love to do",
+        hint: "สิ่งที่เด็กๆ ชอบทำ",
     },
     {
         word: "BOOK",
-        hint: "Something you read",
+        hint: "สิ่งที่คุณอ่าน",
     },
     {
         word: "PEN",
-        hint: "A tool for writing",
+        hint: "เครื่องมือสำหรับเขียน",
     },
     {
         word: "TEACHER",
-        hint: "A person who teaches students",
+        hint: "บุคคลที่สอนนักเรียน",
     },
     {
         word: "POCKET",
-        hint: "A bag for carrying small items",
+        hint: "กระเป๋าเล็กๆ สำหรับใส่ของ",
     },
     {
         word: "CLASS",
-        hint: "A place where students learn",
+        hint: "สถานที่ที่นักเรียนเรียนรู้",
     },
     {
         word: "EXPERT",
-        hint: "Person with extensive knowledge",
-    },
-    {
-        word: "DESK",
-        hint: "A table for studying",
-    },
-    {
-        word: "SECOND",
-        hint: "One-sixtieth of a minute",
-    },
-    {
-        word: "LIBRARY",
-        hint: "Place containing collection of books",
+        hint: "ผู้ที่มีความรู้ความเชี่ยวชาญสูง",
     },
 ];
 
