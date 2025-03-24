@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const vocabTable = document.getElementById("vocab-list");
 
     // ✅ ตรวจสอบว่ามีคำศัพท์สำหรับ Beginner หรือไม่
-    if (!words || !words['begin']) {
+    if (!words || !words['advanced']) {
         console.error("❌ Error: ไม่พบคำศัพท์สำหรับ Beginner");
         return;
     }
