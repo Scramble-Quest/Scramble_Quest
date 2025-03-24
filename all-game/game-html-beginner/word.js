@@ -1,96 +1,164 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",//ตัวใหญ่เท่านั้น
-        hint: "A red or green fruit",
+        word: "<!DOCTYPE>",//ตัวใหญ่เท่านั้น
+        hint: "กำหนดประเภทของเอกสาร HTML",
     },
     {
-        word: "BANANA",
-        hint: "A long, curved yellow fruit",
+        word: "<HTMl>",
+        hint: "แท็กหลักที่ครอบเนื้อหาทั้งหมดของเว็บ",
     },
     {
-        word: "BREAD",
-        hint: "Food made from flour",
+        word: "<HEAD>",
+        hint: "ส่วนหัวของเอกสาร ใช้เก็บ metadata",
     },
     {
-        word: "MILK",
-        hint: "A white liquid from cows",
+        word: "<TITLE>",
+        hint: "ชื่อของหน้าเว็บที่แสดงในแท็บของเบราว์เซอร์",
     },
     {
-        word: "TABLE",
-        hint: "A piece of furniture with a flat top",
+        word: "<META>",
+        hint: "กำหนดข้อมูลเมตา",
     },
     {
-        word: "CHAIR",
-        hint: "Something you sit on",
+        word: "<LINK>",
+        hint: "ใช้เชื่อมโยงไฟล์ภายนอก",
     },
     {
-        word: "BED",
-        hint: "A place where you sleep",
+        word: "<STYLE>",
+        hint: "ใช้เขียน CSS ภายใน HTML",
     },
     {
-        word: "FATHER",
-        hint: "A male parent",
+        word: "<SCRIPT>",
+        hint: "ใช้เพิ่ม JavaScript ลงใน HTML",
     },
     {
-        word: "MOTHER",
-        hint: "A female parent",
+        word: "<BODY>",
+        hint: "ส่วนที่ใช้แสดงเนื้อหาบนเว็บ",
     },
     {
-        word: "RUN",
-        hint: "Moving fast on foot",
+        word: "<H1>-<H6>",
+        hint: "แท็กสำหรับหัวข้อ (ใหญ่สุด-เล็กสุด)",
     },
     {
-        word: "EAT",
-        hint: "What you do with food",
+        word: "<P>",
+        hint: "ย่อหน้าข้อความ",
     },
     {
-        word: "DRINK",
-        hint: "To take liquid into the mouth",
+        word: "<BR>",
+        hint: "ขึ้นบรรทัดใหม่ (ไม่ต้องปิดแท็ก)",
     },
     {
-        word: "SLEEP",
-        hint: "To rest with your eyes closed",
+        word: "<HR>",
+        hint: "เส้นคั่นแนวนอน",
     },
     {
-        word: "PLAY",
-        hint: "What children love to do",
+        word: "<B>",
+        hint: "ทำตัวหนา (ไม่เน้นความสำคัญ)",
     },
     {
-        word: "BOOK",
-        hint: "Something you read",
+        word: "<STRONG>",
+        hint: "ทำตัวหนา (มีความสำคัญ)",
     },
     {
-        word: "PEN",
-        hint: "A tool for writing",
+        word: "<I>",
+        hint: "ทำตัวเอียง (ไม่เน้นความสำคัญ)",
     },
     {
-        word: "TEACHER",
-        hint: "A person who teaches students",
+        word: "<EM>",
+        hint: "ทำตัวเอียง (เน้นความสำคัญ)",
     },
     {
-        word: "POCKET",
-        hint: "A bag for carrying small items",
+        word: "<MARK>",
+        hint: "ไฮไลต์ข้อความ",
     },
     {
-        word: "CLASS",
-        hint: "A place where students learn",
+        word: "<SMALL>",
+        hint: "ข้อความขนาดเล็ก",
     },
     {
-        word: "EXPERT",
-        hint: "Person with extensive knowledge",
+        word: "<DEL>",
+        hint: "ขีดฆ่าข้อความ",
     },
     {
-        word: "DESK",
-        hint: "A table for studying",
+        word: "<INS>",//ตัวใหญ่เท่านั้น
+        hint: "ขีดเส้นใต้ข้อความ",
     },
     {
-        word: "SECOND",
-        hint: "One-sixtieth of a minute",
+        word: "<SUB>",
+        hint: "ตัวห้อย (เช่น H₂O)",
     },
     {
-        word: "LIBRARY",
-        hint: "Place containing collection of books",
+        word: "<SUP>",
+        hint: "ตัวยก (เช่น X²)",
+    },
+    {
+        word: "<BLOCKQUOTE>",
+        hint: "ใช้อ้างอิงข้อความจากแหล่งอื่น",
+    },
+    {
+        word: "<CITE>",
+        hint: "ใช้อ้างอิงชื่อเรื่องของงาน",
+    },
+    {
+        word: "<A>",
+        hint: "ใช้สร้างลิงก์ไปยังหน้าอื่น",
+    },
+    {
+        word: "<NAV>",
+        hint: "ใช้สำหรับเมนูนำทาง",
+    },
+    {
+        word: "<UL>",
+        hint: "รายการแบบไม่มีลำดับ (แสดงเป็น bullet points)",
+    },
+    {
+        word: "<OL>",
+        hint: "รายการแบบมีลำดับ (แสดงเป็นตัวเลข)",
+    },
+    {
+        word: "<LI>",
+        hint: "รายการใน <ul> หรือ <ol>",
+    },
+    {
+        word: "<DL>",
+        hint: "รายการคำอธิบาย",
+    },
+    {
+        word: "<DT>",
+        hint: "หัวข้อใน <dl>",
+    },
+    {
+        word: "<DD>",
+        hint: "คำอธิบายของ <dt>",
+    },
+    {
+        word: "<TABLE>",
+        hint: "ใช้สร้างตาราง",
+    },
+    {
+        word: "<TR>",
+        hint: "แถวของตาราง",
+    },
+    {
+        word: "<TH>",
+        hint: "หัวข้อของคอลัมน์ (ตัวหนาและอยู่ตรงกลาง)",
+    },
+    {
+        word: "<TD>",
+        hint: "เซลล์ของข้อมูล",
+    },
+    {
+        word: "<FORM>",
+        hint: "ฟอร์มสำหรับรับข้อมูลจากผู้ใช้",
+    },
+    {
+        word: "<INPUT>",
+        hint: "ช่องกรอกข้อมูล (text, password, email ฯลฯ)",
+    },
+    {
+        word: "<BUTTON>",
+        hint: "ปุ่มกด",
     },
 ];
 

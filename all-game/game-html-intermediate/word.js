@@ -1,96 +1,164 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",//ตัวใหญ่เท่านั้น
-        hint: "A red or green fruit",
+        word: "<THEAD>",//ตัวใหญ่เท่านั้น
+        hint: "กลุ่มส่วนหัวของตาราง",
     },
     {
-        word: "BANANA",
-        hint: "A long, curved yellow fruit",
+        word: "<TBODY>",
+        hint: "กลุ่มเนื้อหาหลักของตาราง",
     },
     {
-        word: "BREAD",
-        hint: "Food made from flour",
+        word: "<TFOOT>",
+        hint: "กลุ่มส่วนท้ายของตาราง",
     },
     {
-        word: "MILK",
-        hint: "A white liquid from cows",
+        word: "<COL>",
+        hint: "กำหนดคุณสมบัติของคอลัมน์",
     },
     {
-        word: "TABLE",
-        hint: "A piece of furniture with a flat top",
+        word: "<COLGROUP>",
+        hint: "จัดกลุ่มคอลัมน์ในตาราง",
     },
     {
-        word: "CHAIR",
-        hint: "Something you sit on",
+        word: "<TEXTAREA>",
+        hint: "ช่องกรอกข้อความหลายบรรทัด",
     },
     {
-        word: "BED",
-        hint: "A place where you sleep",
+        word: "<SELECT>",
+        hint: "เมนูเลือกค่า",
     },
     {
-        word: "FATHER",
-        hint: "A male parent",
+        word: "<OPTION>",
+        hint: "ตัวเลือกใน <select>",
     },
     {
-        word: "MOTHER",
-        hint: "A female parent",
+        word: "<OPTGROUP>",
+        hint: "กลุ่มตัวเลือกใน <select>",
     },
     {
-        word: "RUN",
-        hint: "Moving fast on foot",
+        word: "<LABEL>",
+        hint: "ป้ายกำกับ <input>",
     },
     {
-        word: "EAT",
-        hint: "What you do with food",
+        word: "<FIELDSET>",
+        hint: "กลุ่มของฟอร์ม",
     },
     {
-        word: "DRINK",
-        hint: "To take liquid into the mouth",
+        word: "<LEGEND>",
+        hint: "หัวข้อของ <fieldset>",
     },
     {
-        word: "SLEEP",
-        hint: "To rest with your eyes closed",
+        word: "<DATALIST>",
+        hint: "รายการค่าที่แนะนำ",
     },
     {
-        word: "PLAY",
-        hint: "What children love to do",
+        word: "<OUTPUT>",
+        hint: "แสดงค่าผลลัพธ์",
     },
     {
-        word: "BOOK",
-        hint: "Something you read",
+        word: "<PROGRESS>",
+        hint: "แสดงความคืบหน้า",
     },
     {
-        word: "PEN",
-        hint: "A tool for writing",
+        word: "<METER>",
+        hint: "วัดระดับค่า",
     },
     {
-        word: "TEACHER",
-        hint: "A person who teaches students",
+        word: "<DIALOG>",
+        hint: "กล่องโต้ตอบ",
     },
     {
-        word: "POCKET",
-        hint: "A bag for carrying small items",
+        word: "<MENU>",
+        hint: "เมนูคำสั่ง",
     },
     {
-        word: "CLASS",
-        hint: "A place where students learn",
+        word: "<TEMPLATE>",
+        hint: "เทมเพลต HTML ซ่อนอยู่",
     },
     {
-        word: "EXPERT",
-        hint: "Person with extensive knowledge",
+        word: "<SLOT>",
+        hint: "ช่องสำหรับ Web Components",
     },
     {
-        word: "DESK",
-        hint: "A table for studying",
+        word: "<IMG>",//ตัวใหญ่เท่านั้น
+        hint: "แสดงรูปภาพ",
     },
     {
-        word: "SECOND",
-        hint: "One-sixtieth of a minute",
+        word: "<AUDIO>",
+        hint: "ใส่ไฟล์เสียง",
     },
     {
-        word: "LIBRARY",
-        hint: "Place containing collection of books",
+        word: "<VIDEO>",
+        hint: "ใส่ไฟล์วิดีโอ",
+    },
+    {
+        word: "<IFRAME>",
+        hint: "ฝังหน้าเว็บ",
+    },
+    {
+        word: "<EMBED>",
+        hint: "ฝังเนื้อหาเก่า",
+    },
+    {
+        word: "<OBJECT>",
+        hint: "ฝังเนื้อหาภายนอก",
+    },
+    {
+        word: "<PARAM>",
+        hint: "พารามิเตอร์ <object>",
+    },
+    {
+        word: "<PICTURE>",
+        hint: "ใช้แสดงรูปภาพแบบ responsive",
+    },
+    {
+        word: "<SOURCE>",
+        hint: "แหล่งข้อมูล <audio> / <video>",
+    },
+    {
+        word: "<TRACK>",
+        hint: "คำบรรยายวิดีโอ",
+    },
+    {
+        word: "<BASE>",
+        hint: "URL พื้นฐาน",
+    },
+    {
+        word: "<NOSCRIPT>",
+        hint: "แสดงเนื้อหาเมื่อ JS ปิด",
+    },
+    {
+        word: "<HEADER>",
+        hint: "ส่วนหัว",
+    },
+    {
+        word: "<FOOTER>",
+        hint: "ส่วนท้าย",
+    },
+    {
+        word: "<SECTION>",
+        hint: "กลุ่มเนื้อหา",
+    },
+    {
+        word: "<ARTICLE>",
+        hint: "บทความ",
+    },
+    {
+        word: "<ASIDE>",
+        hint: "เนื้อหาข้างเคียง",
+    },
+    {
+        word: "<MAIN>",
+        hint: "เนื้อหาหลัก",
+    },
+    {
+        word: "<FIGURE>",
+        hint: "กลุ่มของรูปภา",
+    },
+    {
+        word: "<FIGCAPTION>",
+        hint: "คำบรรยายใต้รูป",
     },
 ];
 
