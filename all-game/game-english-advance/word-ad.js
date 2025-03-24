@@ -1,96 +1,96 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",//ตัวใหญ่เท่านั้น
-        hint: "A red or green fruit",
+        word: "PERCEPTION",//ตัวใหญ่เท่านั้น
+        hint: "การรับรู้",
     },
     {
-        word: "BANANA",
-        hint: "A long, curved yellow fruit",
+        word: "Algorithm",
+        hint: "ขั้นตอนวิธี",
     },
     {
-        word: "BREAD",
-        hint: "Food made from flour",
+        word: "Paradox",
+        hint: "ความขัดแย้ง",
     },
     {
-        word: "MILK",
-        hint: "A white liquid from cows",
+        word: "Sophisticated",
+        hint: "ช่ำชอง",
     },
     {
-        word: "TABLE",
-        hint: "A piece of furniture with a flat top",
+        word: "Manipulate",
+        hint: "จัดการ",
     },
     {
-        word: "CHAIR",
-        hint: "Something you sit on",
+        word: "Innovation",
+        hint: "นวัตกรรม",
     },
     {
-        word: "BED",
-        hint: "A place where you sleep",
+        word: "Sustainable",
+        hint: "ยั่งยืน",
     },
     {
-        word: "FATHER",
-        hint: "A male parent",
+        word: "Entrepreneur",
+        hint: "ผู้ประกอบการ",
     },
     {
-        word: "MOTHER",
-        hint: "A female parent",
+        word: "Collaboration",
+        hint: "การทำงานร่วมกัน",
     },
     {
-        word: "RUN",
-        hint: "Moving fast on foot",
+        word: "Synchronize",
+        hint: "ทำให้เกิดขึ้นในเวลาเดียวกัน",
     },
     {
-        word: "EAT",
-        hint: "What you do with food",
+        word: "Optimization",
+        hint: "การเพิ่มประสิทธิภาพ",
     },
     {
-        word: "DRINK",
-        hint: "To take liquid into the mouth",
+        word: "Infrastructure",
+        hint: "โครงสร้างพื้นฐาน",
     },
     {
-        word: "SLEEP",
-        hint: "To rest with your eyes closed",
+        word: "Transformation",
+        hint: "การเปลี่ยนแปลง",
     },
     {
-        word: "PLAY",
-        hint: "What children love to do",
+        word: "Wholehearted",
+        hint: "เต็มใจ",
     },
     {
-        word: "BOOK",
-        hint: "Something you read",
+        word: "Interconnected",
+        hint: "เชื่อมโยงกัน",
     },
     {
-        word: "PEN",
-        hint: "A tool for writing",
+        word: "Resilience",
+        hint: "ความยืดหยุ่น",
     },
     {
-        word: "TEACHER",
-        hint: "A person who teaches students",
+        word: "Kinesthetic",
+        hint: "การรับรู้ทางกาย",
     },
     {
-        word: "POCKET",
-        hint: "A bag for carrying small items",
+        word: "Multicultural",
+        hint: "พหุวัฒนธรรม",
     },
     {
-        word: "CLASS",
-        hint: "A place where students learn",
+        word: "Comprehensive",
+        hint: "ครอบคลุม",
     },
     {
-        word: "EXPERT",
-        hint: "Person with extensive knowledge",
+        word: "Nonetheless",
+        hint: "กระนั้นก็ตาม",
     },
     {
-        word: "DESK",
-        hint: "A table for studying",
+        word: "DEFENDANT",
+        hint: "จำเลย",
     },
     {
-        word: "SECOND",
-        hint: "One-sixtieth of a minute",
+        word: "LITIGATION",
+        hint: "การฟ้องร้อง",
     },
     {
-        word: "LIBRARY",
-        hint: "Place containing collection of books",
+        word: "EXONERATE",
+        hint: "พ้นผิด",
     },
 ];
 

@@ -1,96 +1,96 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",//ตัวใหญ่เท่านั้น
-        hint: "A red or green fruit",
+        word: "ENGINEER",//ตัวใหญ่เท่านั้น
+        hint: "วิศวกร",
     },
     {
-        word: "BANANA",
-        hint: "A long, curved yellow fruit",
+        word: "LAWYER",
+        hint: "ทนาย",
     },
     {
-        word: "BREAD",
-        hint: "Food made from flour",
+        word: "PASSPORT",
+        hint: "หนังสือเดินทาง",
     },
     {
-        word: "MILK",
-        hint: "A white liquid from cows",
+        word: "LUGGAGE",
+        hint: "กระเป๋าเดินทาง",
     },
     {
-        word: "TABLE",
-        hint: "A piece of furniture with a flat top",
+        word: "NERVOUS",
+        hint: "รู้สึกกังวล",
     },
     {
-        word: "CHAIR",
-        hint: "Something you sit on",
+        word: "EXCITED",
+        hint: "รู้สึกตื่นเต้น",
     },
     {
-        word: "BED",
-        hint: "A place where you sleep",
+        word: "DISCUSSION",
+        hint: "การสนทนา",
     },
     {
-        word: "FATHER",
-        hint: "A male parent",
+        word: "OPINION",
+        hint: "ความคิดเห็น",
     },
     {
-        word: "MOTHER",
-        hint: "A female parent",
+        word: "HYPOTHESIS",
+        hint: "สมมติฐาน",
     },
     {
-        word: "RUN",
-        hint: "Moving fast on foot",
+        word: "ARCHITECT",
+        hint: "สถาปนิก",
     },
     {
-        word: "EAT",
-        hint: "What you do with food",
+        word: "NEGOTIATION",
+        hint: "การเจรจาต่อรอง",
     },
     {
-        word: "DRINK",
-        hint: "To take liquid into the mouth",
+        word: "INVESTMENT",
+        hint: "การลงทุน",
     },
     {
-        word: "SLEEP",
-        hint: "To rest with your eyes closed",
+        word: "REVENUE",
+        hint: "รายได้",
     },
     {
-        word: "PLAY",
-        hint: "What children love to do",
+        word: "INFLATION",
+        hint: "เงินเฟ้อ",
     },
     {
-        word: "BOOK",
-        hint: "Something you read",
+        word: "FRUSTRATION",
+        hint: "ความผิดหวัง",
     },
     {
-        word: "PEN",
-        hint: "A tool for writing",
+        word: "EMBARRASSED",
+        hint: "รู้สึกอับอาย",
     },
     {
-        word: "TEACHER",
-        hint: "A person who teaches students",
+        word: "ROBOTICS",
+        hint: "การทำหุ่นยนต์",
     },
     {
-        word: "POCKET",
-        hint: "A bag for carrying small items",
+        word: "FISCAL",
+        hint: "เกี่ยวกับการเงิน",
     },
     {
-        word: "CLASS",
-        hint: "A place where students learn",
+        word: "SUBSIDY",
+        hint: "เงินช่วยเหลือ",
     },
     {
-        word: "EXPERT",
-        hint: "Person with extensive knowledge",
+        word: "APPEAL",
+        hint: "อุทธรณ์",
     },
     {
-        word: "DESK",
-        hint: "A table for studying",
+        word: "AIRPORT",
+        hint: "สนามบิน",
     },
     {
-        word: "SECOND",
-        hint: "One-sixtieth of a minute",
+        word: "RESERVATION",
+        hint: "การจอง",
     },
     {
-        word: "LIBRARY",
-        hint: "Place containing collection of books",
+        word: "JOURNALIST",
+        hint: "นักข่าว",
     },
 ];
 

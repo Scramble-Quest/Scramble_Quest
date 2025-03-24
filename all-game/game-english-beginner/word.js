@@ -2,95 +2,95 @@
 const wordList = [
     {
         word: "APPLE",//ตัวใหญ่เท่านั้น
-        hint: "A red or green fruit",
+        hint: "แอปเปิ้ล",
     },
     {
         word: "BANANA",
-        hint: "A long, curved yellow fruit",
+        hint: "กล้วย",
     },
     {
         word: "BREAD",
-        hint: "Food made from flour",
+        hint: "ขนมปัง",
     },
     {
         word: "MILK",
-        hint: "A white liquid from cows",
+        hint: "นม",
     },
     {
         word: "TABLE",
-        hint: "A piece of furniture with a flat top",
+        hint: "โต๊ะ",
     },
     {
         word: "CHAIR",
-        hint: "Something you sit on",
+        hint: "เก้าอี้",
     },
     {
         word: "BED",
-        hint: "A place where you sleep",
+        hint: "เตียง",
     },
     {
         word: "FATHER",
-        hint: "A male parent",
+        hint: "พ่อ",
     },
     {
         word: "MOTHER",
-        hint: "A female parent",
+        hint: "แม่",
     },
     {
         word: "RUN",
-        hint: "Moving fast on foot",
+        hint: "วิ่ง",
     },
     {
         word: "EAT",
-        hint: "What you do with food",
+        hint: "กิน",
     },
     {
         word: "DRINK",
-        hint: "To take liquid into the mouth",
+        hint: "ดื่ม",
     },
     {
         word: "SLEEP",
-        hint: "To rest with your eyes closed",
+        hint: "นอน",
     },
     {
         word: "PLAY",
-        hint: "What children love to do",
+        hint: "เล่น",
     },
     {
         word: "BOOK",
-        hint: "Something you read",
+        hint: "หนังสือ",
     },
     {
         word: "PEN",
-        hint: "A tool for writing",
+        hint: "ปากกา",
     },
     {
         word: "TEACHER",
-        hint: "A person who teaches students",
+        hint: "ครู",
     },
     {
         word: "POCKET",
-        hint: "A bag for carrying small items",
+        hint: "กระเป๋า",
     },
     {
         word: "CLASS",
-        hint: "A place where students learn",
+        hint: "ห้องเรียน",
     },
     {
         word: "EXPERT",
-        hint: "Person with extensive knowledge",
+        hint: "ผู้เชี่ยวชาญ",
     },
     {
         word: "DESK",
-        hint: "A table for studying",
+        hint: "โต๊ะ",
     },
     {
-        word: "SECOND",
-        hint: "One-sixtieth of a minute",
+        word: "AIRPLANE",
+        hint: "เครื่องบิน",
     },
     {
         word: "LIBRARY",
-        hint: "Place containing collection of books",
+        hint: "ห้องสมุด",
     },
 ];
 
