@@ -1,24 +1,17 @@
-// ซ่อน container ตั้งแต่เริ่มต้น
-document.querySelector('.container').style.display = 'none';
-document.querySelector('.music').style.display = 'none';
+// Remove the initial hide
+// document.querySelector('.container').style.display = 'none';
+// document.querySelector('.music').style.display = 'none';
 
-// รอให้โหลดทรัพยากรทั้งหมดเสร็จสิ้น
+// Simplify the window load event
 window.addEventListener('load', function() {
-    // ดึง elements ที่ต้องการ
-    const loader = document.querySelector('.loader');
-    const preloader = document.querySelector('#preloader');
+    // Just show the container and music controls immediately
     const container = document.querySelector('.container');
     const music = document.querySelector('.music');
-
-    // ซ่อน loading elements
-    loader.style.display = 'none';
-    preloader.style.display = 'none';
     
-    // แสดงส่วนเกมและปุ่มควบคุมเสียง
     container.style.display = 'block';
     music.style.display = 'flex';
 
-    // เริ่มต้นเกม
+    // Initialize game
     initializeGame();
 });
 

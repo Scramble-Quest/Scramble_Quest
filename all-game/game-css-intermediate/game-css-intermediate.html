@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Advanced Level</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game-css-intermediate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/img/reColor.png" type="image/x-icon">
-    <link rel="stylesheet" href="/all-game/game-css-intermediate/media.css">
-    <link rel="stylesheet" href="/all-game/game-css-intermediate/game-css-intermediate.css">
-    <script src="/all-game/game-css-intermediate/word.js" defer></script>
+    <link href="/all-game/game-css-intermediate/media.css" rel="stylesheet">
+    <link href="/all-game/game-css-intermediate/game-css-intermediate.css" rel="stylesheet">
     <script src="/all-game/game-css-intermediate/script.js" defer></script>
-    <script src="/all-game/game-css-intermediate/random.js" defer></script>
+    <script src="/all-game/game-css-intermediate/word.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/all-game/game-css-intermediate/random.js" defer></script>
 </head>
 <body>
-    <span class="loader"></span>
-    <div id="preloader"></div>
+    <!-- <span class="loader"></span> -->
+    <!-- <div id="preloader"></div> -->
+    <!-- Menu remains unchanged -->
     <input type="checkbox" id="menu-toggle" />
     <div class="slide-menu">
         <ul>
@@ -47,6 +48,7 @@
         <header>
             <a href="/all-game/all-game.html" style="color: white; text-decoration: none;"><button id="backBtn">← กลับ</button></a>
         </header>
+
         <div class="game-container">
             <div class="game-card">
                 <h2>Word Scramble</h2>
@@ -73,11 +75,13 @@
             </div>
         </div>
     </div>
+    <!-- Removed resultsContainer entirely -->
     <div class="background-video-container">
         <video autoplay muted loop id="background-video">
             <source src="/img/Background Pattern 1080p 30s.mp4" type="video/mp4">
         </video>
     </div>
+    <!-- Music and audio remain unchanged -->
     <div class="music">
         <img id="icon" src="/img/play.png" alt="Play/Pause">
         <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.6">
@@ -86,6 +90,5 @@
     <audio id="correctSound" src="#"></audio>
     <audio id="wrongSound" src="#"></audio>
     <audio id="gameOverSound" src="#"></audio>
-</body>
 </body>
 </html>
