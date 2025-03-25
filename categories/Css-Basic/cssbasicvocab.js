@@ -125,7 +125,7 @@ let words = {
             hint: "กำหนดสี",
         },
         {
-            word: "<color>",
+            word: "< color >",
             hint: "กำหนดสี",
         },
         {
