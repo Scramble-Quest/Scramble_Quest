@@ -1,84 +1,84 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",
-        hint: "ผลไม้สีแดงหรือเขียว",
+        word: "MISSION",
+        hint: "ภารกิจ",
     },
     {
-        word: "BANANA",
-        hint: "ผลไม้สีเหลือง โค้งยาว",
+        word: "BARRIER",
+        hint: "สิ่งกีดขวาง,อุปสรรค",
     },
     {
-        word: "BREAD",
-        hint: "อาหารที่ทำจากแป้ง",
+        word: "FORTUNE",
+        hint: "โชคลาภ",
     },
     {
-        word: "MILK",
-        hint: "ของเหลวสีขาวจากวัว",
+        word: "HARVEST",
+        hint: "การเก็บเกี่ยว",
     },
     {
-        word: "TABLE",
-        hint: "เฟอร์นิเจอร์ที่มีพื้นเรียบด้านบน",
+        word: "JUSTICE",
+        hint: "ความยุติธรรม",
     },
      {
-         word: "CHAIR",
-         hint: "สิ่งที่คุณนั่งบนมัน",
+         word: "LANDING",
+         hint: "ลงจอด",
      },
      {
-         word: "BED",
-         hint: "ที่สำหรับนอนหลับ",
+         word: "LANTERN",
+         hint: "โคมไฟ",
      },
      {
-         word: "FATHER",
-         hint: "ผู้ปกครองเพศชาย",
+         word: "CAPTURE",
+         hint: "ถ่ายภาพ,จับกุม",
      },
      {
-         word: "MOTHER",
-         hint: "ผู้ปกครองเพศหญิง",
+         word: "BLANKET",
+         hint: "ผ้าห่ม",
      },
      {
-         word: "RUN",
-         hint: "การเคลื่อนไหวเร็วด้วยเท้า",
+         word: "GRAVITY",
+         hint: "แรงโน้มถ่วง",
      },
      {
-         word: "EAT",
-         hint: "การกินอาหาร",
+         word: "FICTION",
+         hint: "นิยาย,เรื่องแต่ง",
      },
      {
-         word: "DRINK",
-        hint: "การดื่มของเหลว",
+         word: "THUNDER",
+        hint: "สายฟ้า",
      },
      {
-         word: "SLEEP",
-         hint: "การพักผ่อนโดยการหลับตา",
+         word: "JOURNEY",
+         hint: "การเดินทาง",
      },
      {
-         word: "PLAY",
-         hint: "สิ่งที่เด็กๆ ชอบทำ",
+         word: "KINGDOM",
+         hint: "อาณาจักร",
      },
      {
-         word: "BOOK",
-         hint: "สิ่งที่คุณอ่าน",
+         word: "MESSAGE",
+         hint: "ข้อความ",
      },
      {
-         word: "PEN",
-         hint: "เครื่องมือสำหรับเขียน",
+         word: "NETWORK",
+         hint: "เครือข่าย",
      },
     {
-         word: "TEACHER",
-         hint: "บุคคลที่สอนนักเรียน",
+         word: "PICTURE",
+         hint: "รูปภาพ",
      },
      {
-         word: "POCKET",
-         hint: "กระเป๋าเล็กๆ สำหรับใส่ของ",
+         word: "QUALITY",
+         hint: "คุณภาพ",
      },
      {
-         word: "CLASS",
-         hint: "สถานที่ที่นักเรียนเรียนรู้",
+         word: "REQUEST",
+         hint: "คำขอ",
      },
     {
-         word: "EXPERT",
-         hint: "ผู้ที่มีความรู้ความเชี่ยวชาญสูง",
+         word: "VICTORY",
+         hint: "ชัยชนะ",
      },
 ];
 
