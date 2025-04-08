@@ -1,85 +1,85 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",
-        hint: "ผลไม้สีแดงหรือเขียว",
+        word: "ANIMAL",
+        hint: "สัตว์",
     },
     {
         word: "BANANA",
-        hint: "ผลไม้สีเหลือง โค้งยาว",
+        hint: "กล้วย",
     },
     {
-        word: "BREAD",
-        hint: "อาหารที่ทำจากแป้ง",
+        word: "CIRCLE",
+        hint: "วงกลม",
     },
     {
-        word: "MILK",
-        hint: "ของเหลวสีขาวจากวัว",
+        word: "DANGER",
+        hint: "อันตราย",
     },
     {
-        word: "TABLE",
-        hint: "เฟอร์นิเจอร์ที่มีพื้นเรียบด้านบน",
+        word: "ELBOWS",
+        hint: "ข้อศอก",
     },
-     {
-         word: "CHAIR",
-         hint: "สิ่งที่คุณนั่งบนมัน",
-     },
-     {
-         word: "BED",
-         hint: "ที่สำหรับนอนหลับ",
-     },
-     {
-         word: "FATHER",
-         hint: "ผู้ปกครองเพศชาย",
-     },
-     {
-         word: "MOTHER",
-         hint: "ผู้ปกครองเพศหญิง",
-     },
-     {
-         word: "RUN",
-         hint: "การเคลื่อนไหวเร็วด้วยเท้า",
-     },
-     {
-         word: "EAT",
-         hint: "การกินอาหาร",
-     },
-     {
-         word: "DRINK",
-        hint: "การดื่มของเหลว",
-     },
-     {
-         word: "SLEEP",
-         hint: "การพักผ่อนโดยการหลับตา",
-     },
-     {
-         word: "PLAY",
-         hint: "สิ่งที่เด็กๆ ชอบทำ",
-     },
-     {
-         word: "BOOK",
-         hint: "สิ่งที่คุณอ่าน",
-     },
-     {
-         word: "PEN",
-         hint: "เครื่องมือสำหรับเขียน",
-     },
     {
-         word: "TEACHER",
-         hint: "บุคคลที่สอนนักเรียน",
-     },
-     {
-         word: "POCKET",
-         hint: "กระเป๋าเล็กๆ สำหรับใส่ของ",
-     },
-     {
-         word: "CLASS",
-         hint: "สถานที่ที่นักเรียนเรียนรู้",
-     },
+        word: "FABRIC",
+        hint: "ผ้าหรือสิ่งทอ",
+    },
     {
-         word: "EXPERT",
-         hint: "ผู้ที่มีความรู้ความเชี่ยวชาญสูง",
-     },
+        word: "GARDEN",
+        hint: "สวน",
+    },
+    {
+        word: "HAMMER",
+        hint: "ค้อน",
+    },
+    {
+        word: "ISLAND",
+        hint: "เกาะ",
+    },
+    {
+        word: "JACKET",
+        hint: "เสื้อแจ็กเกต",
+    },
+    {
+        word: "KITTEN",
+        hint: "ลูกแมว",
+    },
+    {
+        word: "LOCKET",
+        hint: "จี้ล็อกเก็ต",
+    },
+    {
+        word: "MARKET",
+        hint: "ตลาด",
+    },
+    {
+        word: "NATION",
+        hint: "ชาติ",
+    },
+    {
+        word: "ORANGE",
+        hint: "ส้ม",
+    },
+    {
+        word: "PEOPLE",
+        hint: "ประชากร",
+    },
+    {
+        word: "ROCKET",
+        hint: "จรวด",
+    },
+    {
+        word: "SUMMER",
+        hint: "ฤดูร้อน",
+    },
+    {
+        word: "TRAVEL",
+        hint: "การท่องเที่ยว",
+    },
+    {
+        word: "WINDOW",
+        hint: "หน้าต่าง",
+    },
 ];
 
 

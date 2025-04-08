@@ -1,84 +1,84 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",
-        hint: "ผลไม้สีแดงหรือเขียว",
+        word: "ENGINEER",
+        hint: "วิศวกร",
     },
     {
-        word: "BANANA",
-        hint: "ผลไม้สีเหลือง โค้งยาว",
+        word: "HOSPITAL",
+        hint: "โรงพยาบาล",
     },
     {
-        word: "BREAD",
-        hint: "อาหารที่ทำจากแป้ง",
+        word: "LEARNING",
+        hint: "การเรียนรู้",
     },
     {
-        word: "MILK",
-        hint: "ของเหลวสีขาวจากวัว",
+        word: "JOURNEY",
+        hint: "การเดินทาง",
     },
     {
-        word: "TABLE",
-        hint: "เฟอร์นิเจอร์ที่มีพื้นเรียบด้านบน",
+        word: "VACATION",
+        hint: "การพักผ่อน/วันหยุด",
     },
      {
-         word: "CHAIR",
-         hint: "สิ่งที่คุณนั่งบนมัน",
+         word: "HOMEWORK",
+         hint: "การบ้าน",
      },
      {
-         word: "BED",
-         hint: "ที่สำหรับนอนหลับ",
+         word: "FESTIVAL",
+         hint: "เทศกาล",
      },
      {
-         word: "FATHER",
-         hint: "ผู้ปกครองเพศชาย",
+         word: "BUSINESS",
+         hint: "ธุรกิจ",
      },
      {
-         word: "MOTHER",
-         hint: "ผู้ปกครองเพศหญิง",
+         word: "COMPUTER",
+         hint: "คอมพิวเตอร์",
      },
      {
-         word: "RUN",
-         hint: "การเคลื่อนไหวเร็วด้วยเท้า",
+         word: "LANGUAGE",
+         hint: "ภาษา",
      },
      {
-         word: "EAT",
-         hint: "การกินอาหาร",
+         word: "DECISION",
+         hint: "การตัดสินใจ",
      },
      {
-         word: "DRINK",
-        hint: "การดื่มของเหลว",
+         word: "EMPLOYEE",
+        hint: "พนักงาน",
      },
      {
-         word: "SLEEP",
-         hint: "การพักผ่อนโดยการหลับตา",
+         word: "TRAINING",
+         hint: "การฝึกอบรม",
      },
      {
-         word: "PLAY",
-         hint: "สิ่งที่เด็กๆ ชอบทำ",
+         word: "SCHEDULE",
+         hint: "ตารางเวลา",
      },
      {
-         word: "BOOK",
-         hint: "สิ่งที่คุณอ่าน",
+         word: "STRATEGY",
+         hint: "กลยุทธ์",
      },
      {
-         word: "PEN",
-         hint: "เครื่องมือสำหรับเขียน",
+         word: "MEDECINE",
+         hint: "ยา",
      },
     {
-         word: "TEACHER",
-         hint: "บุคคลที่สอนนักเรียน",
+         word: "BIRTHDAY",
+         hint: "วันเกิด",
      },
      {
-         word: "POCKET",
-         hint: "กระเป๋าเล็กๆ สำหรับใส่ของ",
+         word: "CAMPAIGN",
+         hint: "แคมเปญ",
      },
      {
-         word: "CLASS",
-         hint: "สถานที่ที่นักเรียนเรียนรู้",
+         word: "CUSTOMER",
+         hint: "ลูกค้า",
      },
     {
-         word: "EXPERT",
-         hint: "ผู้ที่มีความรู้ความเชี่ยวชาญสูง",
+         word: "DELIVERY",
+         hint: "การจัดส่ง",
      },
 ];
 

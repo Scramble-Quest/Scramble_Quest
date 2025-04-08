@@ -5,81 +5,81 @@ const wordList = [
         hint: "ผลไม้สีแดงหรือเขียว",
     },
     {
-        word: "BANANA",
-        hint: "ผลไม้สีเหลือง โค้งยาว",
+        word: "DANCE",
+        hint: "เต้น",
     },
     {
         word: "BREAD",
-        hint: "อาหารที่ทำจากแป้ง",
+        hint: "ขนมปัง",
     },
     {
-        word: "MILK",
-        hint: "ของเหลวสีขาวจากวัว",
+        word: "EARTH",
+        hint: "โลก",
     },
     {
         word: "TABLE",
-        hint: "เฟอร์นิเจอร์ที่มีพื้นเรียบด้านบน",
+        hint: "โต๊ะ",
     },
-     {
-         word: "CHAIR",
-         hint: "สิ่งที่คุณนั่งบนมัน",
-     },
-     {
-         word: "BED",
-         hint: "ที่สำหรับนอนหลับ",
-     },
-     {
-         word: "FATHER",
-         hint: "ผู้ปกครองเพศชาย",
-     },
-     {
-         word: "MOTHER",
-         hint: "ผู้ปกครองเพศหญิง",
-     },
-     {
-         word: "RUN",
-         hint: "การเคลื่อนไหวเร็วด้วยเท้า",
-     },
-     {
-         word: "EAT",
-         hint: "การกินอาหาร",
-     },
-     {
-         word: "DRINK",
+    {
+        word: "CHAIR",
+        hint: "เก้าอี้",
+    },
+    {
+        word: "FRAME",
+        hint: "กรอบรูป",
+    },
+    {
+        word: "GHOST",
+        hint: "ผี",
+    },
+    {
+        word: "HEART",
+        hint: "หัวใจ",
+    },
+    {
+        word: "KNIFE",
+        hint: "มีด",
+    },
+    {
+        word: "MONEY",
+        hint: "เงิน",
+    },
+    {
+        word: "DRINK",
         hint: "การดื่มของเหลว",
-     },
-     {
-         word: "SLEEP",
-         hint: "การพักผ่อนโดยการหลับตา",
-     },
-     {
-         word: "PLAY",
-         hint: "สิ่งที่เด็กๆ ชอบทำ",
-     },
-     {
-         word: "BOOK",
-         hint: "สิ่งที่คุณอ่าน",
-     },
-     {
-         word: "PEN",
-         hint: "เครื่องมือสำหรับเขียน",
-     },
+    },
     {
-         word: "TEACHER",
-         hint: "บุคคลที่สอนนักเรียน",
-     },
-     {
-         word: "POCKET",
-         hint: "กระเป๋าเล็กๆ สำหรับใส่ของ",
-     },
-     {
-         word: "CLASS",
-         hint: "สถานที่ที่นักเรียนเรียนรู้",
-     },
+        word: "SLEEP",
+        hint: "นอนหลับ",
+    },
     {
-         word: "EXPERT",
-         hint: "ผู้ที่มีความรู้ความเชี่ยวชาญสูง",
-     },
+        word: "OCEAN",
+        hint: "มหาสมุทร",
+    },
+    {
+        word: "STONE",
+        hint: "หิน",
+    },
+    {
+        word: "TRAIN",
+        hint: "ฝึกฝน, รถไฟ",
+    },
+    {
+        word: "QUEEN",
+        hint: "ราชินี",
+    },
+    {
+        word: "RIVER",
+        hint: "แม่น้ำ",
+    },
+    {
+        word: "CLASS",
+        hint: "สถานที่ที่นักเรียนเรียนรู้",
+    },
+    {
+        word: "EXPERT",
+        hint: "ผู้ที่มีความรู้ความเชี่ยวชาญสูง",
+    },
 ];
 
 

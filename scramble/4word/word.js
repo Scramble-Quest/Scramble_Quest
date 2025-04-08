@@ -1,85 +1,85 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",
-        hint: "ผลไม้สีแดงหรือเขียว",
+        word: "BALL",
+        hint: "ลูกบอล",
     },
     {
-        word: "BANANA",
-        hint: "ผลไม้สีเหลือง โค้งยาว",
+        word: "BOOK",
+        hint: "หนังสือ",
     },
     {
-        word: "BREAD",
-        hint: "อาหารที่ทำจากแป้ง",
+        word: "CAEK",
+        hint: "เค้ก",
     },
     {
-        word: "MILK",
-        hint: "ของเหลวสีขาวจากวัว",
+        word: "CALL",
+        hint: "โทร, เรียก",
     },
     {
-        word: "TABLE",
-        hint: "เฟอร์นิเจอร์ที่มีพื้นเรียบด้านบน",
+        word: "COLD",
+        hint: "เย็น",
     },
-     {
-         word: "CHAIR",
-         hint: "สิ่งที่คุณนั่งบนมัน",
-     },
-     {
-         word: "BED",
-         hint: "ที่สำหรับนอนหลับ",
-     },
-     {
-         word: "FATHER",
-         hint: "ผู้ปกครองเพศชาย",
-     },
-     {
-         word: "MOTHER",
-         hint: "ผู้ปกครองเพศหญิง",
-     },
-     {
-         word: "RUN",
-         hint: "การเคลื่อนไหวเร็วด้วยเท้า",
-     },
-     {
-         word: "EAT",
-         hint: "การกินอาหาร",
-     },
-     {
-         word: "DRINK",
-        hint: "การดื่มของเหลว",
-     },
-     {
-         word: "SLEEP",
-         hint: "การพักผ่อนโดยการหลับตา",
-     },
-     {
-         word: "PLAY",
-         hint: "สิ่งที่เด็กๆ ชอบทำ",
-     },
-     {
-         word: "BOOK",
-         hint: "สิ่งที่คุณอ่าน",
-     },
-     {
-         word: "PEN",
-         hint: "เครื่องมือสำหรับเขียน",
-     },
     {
-         word: "TEACHER",
-         hint: "บุคคลที่สอนนักเรียน",
-     },
-     {
-         word: "POCKET",
-         hint: "กระเป๋าเล็กๆ สำหรับใส่ของ",
-     },
-     {
-         word: "CLASS",
-         hint: "สถานที่ที่นักเรียนเรียนรู้",
-     },
+        word: "DOOR",
+        hint: "ประตู",
+    },
     {
-         word: "EXPERT",
-         hint: "ผู้ที่มีความรู้ความเชี่ยวชาญสูง",
-     },
+        word: "FISH",
+        hint: "ปลา",
+    },
+    {
+        word: "FOOD",
+        hint: "อาหาร",
+    },
+    {
+        word: "GAME",
+        hint: "เกม",
+    },
+    {
+        word: "GIFT",
+        hint: "ของขวัญ",
+    },
+    {
+        word: "GOLD",
+        hint: "ทอง",
+    },
+    {
+        word: "HAND",
+        hint: "มือ",
+    },
+    {
+        word: "HOME",
+        hint: "บ้าน",
+    },
+    {
+        word: "KING",
+        hint: "กษัตริย์",
+    },
+    {
+        word: "LOVE",
+        hint: "รัก",
+    },
+    {
+        word: "MOON",
+        hint: "ดวงจันทร์",
+    },
+    {
+        word: "RAIN",
+        hint: "ฝน",
+    },
+    {
+        word: "ROAD",
+        hint: "ถนน",
+    },
+    {
+        word: "STAR",
+        hint: "ดาว",
+    },
+    {
+        word: "TREE",
+        hint: "ต้นไม้",
+    },
 ];
 
 

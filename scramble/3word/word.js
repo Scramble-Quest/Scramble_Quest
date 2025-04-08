@@ -1,85 +1,85 @@
 // Word list with their corresponding hints
 const wordList = [
     {
-        word: "APPLE",
-        hint: "ผลไม้สีแดงหรือเขียว",
+        word: "DOG",
+        hint: "สุนัข",
     },
     {
-        word: "BANANA",
-        hint: "ผลไม้สีเหลือง โค้งยาว",
+        word: "PEN",
+        hint: "ปากกา",
     },
     {
-        word: "BREAD",
-        hint: "อาหารที่ทำจากแป้ง",
+        word: "SUN",
+        hint: "ดวงอาทิตย์",
     },
     {
-        word: "MILK",
-        hint: "ของเหลวสีขาวจากวัว",
+        word: "MAP",
+        hint: "แผนที่",
     },
     {
-        word: "TABLE",
-        hint: "เฟอร์นิเจอร์ที่มีพื้นเรียบด้านบน",
+        word: "OWL",
+        hint: "นกฮูก",
     },
-     {
-         word: "CHAIR",
-         hint: "สิ่งที่คุณนั่งบนมัน",
-     },
-     {
-         word: "BED",
-         hint: "ที่สำหรับนอนหลับ",
-     },
-     {
-         word: "FATHER",
-         hint: "ผู้ปกครองเพศชาย",
-     },
-     {
-         word: "MOTHER",
-         hint: "ผู้ปกครองเพศหญิง",
-     },
-     {
-         word: "RUN",
-         hint: "การเคลื่อนไหวเร็วด้วยเท้า",
-     },
-     {
-         word: "EAT",
-         hint: "การกินอาหาร",
-     },
-     {
-         word: "DRINK",
-        hint: "การดื่มของเหลว",
-     },
-     {
-         word: "SLEEP",
-         hint: "การพักผ่อนโดยการหลับตา",
-     },
-     {
-         word: "PLAY",
-         hint: "สิ่งที่เด็กๆ ชอบทำ",
-     },
-     {
-         word: "BOOK",
-         hint: "สิ่งที่คุณอ่าน",
-     },
-     {
-         word: "PEN",
-         hint: "เครื่องมือสำหรับเขียน",
-     },
     {
-         word: "TEACHER",
-         hint: "บุคคลที่สอนนักเรียน",
-     },
-     {
-         word: "POCKET",
-         hint: "กระเป๋าเล็กๆ สำหรับใส่ของ",
-     },
-     {
-         word: "CLASS",
-         hint: "สถานที่ที่นักเรียนเรียนรู้",
-     },
+        word: "BUS",
+        hint: "รถบัส",
+    },
     {
-         word: "EXPERT",
-         hint: "ผู้ที่มีความรู้ความเชี่ยวชาญสูง",
-     },
+        word: "BAT",
+        hint: "ค้างคาว",
+    },
+    {
+        word: "SIT",
+        hint: "นั่ง",
+    },
+    {
+        word: "OLD",
+        hint: "เก่า",
+    },
+    {
+        word: "BAG",
+        hint: "กระเป๋า",
+    },
+    {
+        word: "FAT",
+        hint: "ไขมัน",
+    },
+    {
+        word: "LET",
+        hint: "ให้, อนุญาต",
+    },
+    {
+        word: "PET",
+        hint: "สัตว์เลี้ยง",
+    },
+    {
+        word: "KEY",
+        hint: "กุญแจ",
+    },
+    {
+        word: "ICE",
+        hint: "น้ำแข็ง",
+    },
+    {
+        word: "GUM",
+        hint: "หมากฝรั่ง, เหงือก",
+    },
+    {
+        word: "HUG",
+        hint: "กอด",
+    },
+    {
+        word: "POT",
+        hint: "หม้อ",
+    },
+    {
+        word: "CRY",
+        hint: "ร้องไห้",
+    },
+    {
+        word: "MIX",
+        hint: "ผสม",
+    },
 ];
 
 
