@@ -61,7 +61,7 @@ const wordList = [
          hint: "กลยุทธ์",
      },
      {
-         word: "MEDECINE",
+         word: "MEDICINE",
          hint: "ยา",
      },
     {
